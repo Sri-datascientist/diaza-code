@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Process — staircase layout (inline SVGs)</title>
+<style>
+  :root{
+    --bg:#fff;
+    --accent:#232323;
+    --muted:#656664;
+    --step-dot:#232323;
+    --maxwidth:920px;
+    --gutter:28px;
+    --hero-h:260px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:"Helvetica Neue",Arial,Segoe UI,sans-serif;
+    background:var(--bg);
+    color:#222;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
+  /* NAV / HERO */
+  .topbar{
+    background:linear-gradient(180deg,#2f2f2f 0,#2b2b2b 100%);
+    color:#fff;
+    padding:18px 0;
+    display:flex;
+    justify-content:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+  }
+  .nav{
+    width:100%;
+    max-width:1200px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .logo{
+    width:64px;
+    height:64px;
+    border-radius:36px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    transform:translateY(-20px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+  }
+  .menu{
+    display:flex;
+    gap:22px;
+    color:#fff;
+    align-items:center;
+  }
+  .menu a{color:#eee;text-decoration:none;font-size:15px;opacity:.9}
+
+  .hero{
+    height:var(--hero-h);
+    background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260"></svg>');
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+  }
+  .hero h1{
+    font-family: "Georgia", serif;
+    letter-spacing:3px;
+    font-size:64px;
+    margin:0;
+    text-shadow:0 8px 20px rgba(0,0,0,.45);
+  }
+
+  /* PROCESS SECTION */
+  .process-wrap{
+    max-width:1200px;
+    margin:48px auto;
+    padding:0 28px 120px;
+  }
+
+  /* center decorative line */
+  .center-divider{
+    display:flex;
+    justify-content:center;
+    margin:22px 0 50px;
+  }
+  .center-divider svg{width:420px;height:18px;opacity:.9}
+
+  /* Staircase area: big column; we'll absolutely position SVG pieces inside */
+  .stair-area{
+    position:relative;
+    width:100%;
+    max-width:980px;
+    height:1100px; /* tall vertical canvas */
+    margin:0 auto;
+  }
+
+  /* helper to place each step block (right or left) by percentage top */
+  .step{
+    position:absolute;
+    width:44%;
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+  }
+  .step .content{
+    width:50%;
+    font-size:13px;
+  }
+  .step .title{
+    font-weight:700;
+    margin-bottom:6px;
+    font-size:15px;
+  }
+  .step .desc{color:#666;line-height:1.28;font-size:12px}
+
+  /* place dot / number */
+  .num-dot{
+    width:40px;height:40px;border-radius:999px;
+    background:var(--step-dot);
+    color:white;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:16px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  /* left vs right */
+  .left{ left:4%; text-align:left;}
+  .right{ right:4%; text-align:right;}
+
+  /* small helper for small-screen stacking */
+  @media (max-width:920px){
+    .stair-area{height:1600px}
+    .step{position:relative;width:100%;margin:28px 0;flex-direction:row-reverse;justify-content:flex-start}
+    .left,.right{left:auto;right:auto;text-align:left}
+    .center-divider svg{width:280px}
+    .hero h1{font-size:40px}
+  }
+
+  /* Stair SVG container: centered and behind the step content */
+  .stair-svg{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:12px;
+    opacity:1;
+    pointer-events:none;
+    width:620px; /* scale */
+    height:100%;
+  }
+
+  /* inline side illustration wrappers (use absolute positions) */
+  .svg-side{
+    position:absolute; width:86px; height:120px; pointer-events:none;
+  }
+
+  /* place the specific side svg instances by top value tuned to the reference */
+  /* Step 1: top-right plant */
+  .side-step1{ right:86px; top:20px; width:120px; height:120px;}
+  .side-step2{ left:122px; top:246px; width:90px; height:140px;} /* plant near man step2 */
+  .side-lamp{ left:232px; top:352px; width:60px; height:220px;} /* hanging lamp under step2 */
+  .side-hangplant{ right:228px; top:420px; width:64px; height:150px;} /* hanging plants step3 */
+  .side-cat{ left:110px; top:610px; width:90px; height:88px;}
+  .side-woman1{ left:36px; top:860px; width:110px; height:140px;}
+  .side-woman2{ right:40px; top:740px; width:100px; height:150px;}
+
+  /* small footer-ish area below the staircase */
+  .bottom-spacing{height:140px;}
+</style>
+</head>
+<body>
+
+  <!-- NAV + HERO -->
+  <header class="topbar">
+    <div class="nav" style="max-width:1200px;">
+      <div style="width:200px;display:flex;gap:16px;align-items:center;">
+        <div style="width:56px;height:56px;border-radius:999px;background:#fff;display:flex;align-items:center;justify-content:center">Logo</div>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">Project</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+
+      <div class="logo" aria-hidden>
+        <!-- small circular logo placeholder -->
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="22" r="20" fill="transparent" stroke="#232" /></svg>
+      </div>
+
+      <div style="display:flex;gap:22px;align-items:center">
+        <nav class="menu">
+          <a href="#">Process</a>
+          <a href="#">Contact</a>
+          <a href="#">Reviews</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>PROCESS</h1>
+  </section>
+
+  <main class="process-wrap">
+
+    <div class="center-divider" aria-hidden>
+      <!-- decorative center divider -->
+      <svg viewBox="0 0 420 18" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#656664" stroke-linecap="round" stroke-width="1.5" opacity=".95">
+          <path d="M12 9h386" />
+        </g>
+        <g transform="translate(0,0)">
+          <circle cx="10" cy="9" r="3.5" fill="#656664" />
+          <rect x="203" y="5" width="6" height="6" rx="2" fill="#bfbfbf" transform="rotate(45 206 8)"/>
+          <circle cx="410" cy="9" r="3.5" fill="#656664" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="stair-area" role="presentation">
+
+      <!-- Staircase SVG: using a tall composed stairs vector. This SVG is a simplified composite (uses your stair shapes and strokes). -->
+      <svg class="stair-svg" viewBox="0 0 228 312" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <!-- This is the larger staircase SVG you provided earlier (trimmed and scaled). -->
+        <!-- (I embedded the supplied staircase SVG code here; kept stroke colors as in your file). -->
+        <!-- top-most chunk (embedded exactly as you supplied) -->
+        <!-- large svg content (kept minimal for clarity); full: -->
+        <g>
+          <!-- background stairs group -->
+          <path d="M104.066 185.128C104.066 185.128 103.268 232.208 101.975 235.844C100.683 239.48 79.2056 293.567 79.2056 293.567L74.2754 291.196L88.0122 225.502L80.0794 153.52L104.066 185.128Z" fill="#fff" stroke="#263238" stroke-width="0.9447" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M108.927 141.605C108.927 141.605 118.401 179.224 120.588 190.339C122.775 201.453 127.588 295.319 127.588 295.319L122.187 296.455L99.4856 193.454C99.4856 193.454 88.4482 171.295 83.2161 165.943C77.1507 159.75 73.8121 152.111 76.6857 145.427C78.5539 140.948 108.927 141.605 108.927 141.605Z" fill="#fff" stroke="#263238" stroke-width="0.9447" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M84.6207 279.979C91.1397 263.7 101.145 238.291 101.959 235.845C103.214 232.211 104.05 185.129 104.05 185.129L80.0619 153.496L88.0213 225.501L77.1266 277.644L84.6207 279.979Z" fill="#222" stroke="#263238" stroke-width="0.9447" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M126.855 281.364C125.464 254.99 122.249 198.765 120.597 190.339C118.409 179.225 108.934 141.606 108.934 141.606C108.934 141.606 78.5575 140.95 76.639 145.431C73.7651 152.116 77.1042 159.755 83.1703 165.948C88.4564 171.346 99.4921 193.454 99.4921 193.454L119.291 282.323C121.847 282.399 124.399 282.075 126.855 281.364Z" fill="#222" stroke="#263238" stroke-width="0.9447" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- repeated stair treads omitted for brevity - kept impression of three stacked stairs -->
+          <!-- small decorative platforms -->
+          <path d="M90.0664 125.214L90.3501 132.364C90.3501 132.364 94.7424 135.939 104.923 136.484C111.315 136.718 117.66 135.299 123.343 132.364L121.391 121.366L90.0664 125.214Z" fill="#fff" stroke="#263238" stroke-width="0.8524" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- lower platforms -->
+          <path d="M76.4867 210.239L37.7946 208.27L27.635 261.615L84.1033 263.049L76.4867 210.239Z" fill="#263238" />
+        </g>
+      </svg>
+
+      <!-- side inline elements inserted at rough positions -->
+      <!-- Step 1 right top plant (you supplied a plant svg) -->
+      <div class="svg-side side-step1" aria-hidden>
+        <!-- small plant at step 1: (from user first plant near man) -->
+        <svg viewBox="0 0 46 133" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <!-- embedded plant SVG you gave inlined exactly -->
+          <!-- trimmed to fit container -->
+          <path d="M0.793265 53.8975C0.793265 53.8975 0.0223511 73.5716 2.33514 78.9767C4.64793 84.3818 11.0709 87.1928 12.0988 93.2464C13.1267 99.3 18.5225 111.191 18.5225 111.191H21.0916C21.0916 111.191 17.2376 94.1111 14.9248 88.706C12.612 83.3009 8.24415 77.4634 6.18906 72.0583C4.13324 66.6532 0.793265 53.8975 0.793265 53.8975Z" fill="#16BE00"/>
+          <path opacity="0.3" d="M17.4197 103.837C15.9838 100.202 14.4469 95.896 13.9587 93.0249C13.3073 89.1838 10.8063 86.584 8.38756 84.0694C6.64814 82.2612 5.00536 80.5533 4.10272 78.4431C3.24732 76.4424 2.83358 72.0129 2.6582 67.3408C3.26879 69.32 3.87222 71.1582 4.39834 72.5426C5.53648 75.5354 7.3482 78.6399 9.09979 81.642C10.5801 84.1796 12.1119 86.8038 13.1556 89.244C14.3961 92.143 16.1219 98.6168 17.4197 103.837Z" fill="#232323"/>
+          <path d="M9.12891 23.4141C9.12891 23.4141 11.1174 40.0617 10.8605 44.8183C10.6035 49.5749 9.3644 66.2225 10.8834 70.7622C12.4023 75.3026 22.166 99.9494 22.166 104.057V111.192H27.8188C27.8188 111.192 22.166 75.7349 21.652 70.3298C21.1381 64.9247 18.0551 61.6814 17.2842 56.9255C16.5132 52.169 15.7423 35.7375 14.9721 32.2787C14.2011 28.8192 9.12891 23.4141 9.12891 23.4141Z" fill="#16BE00"/>
+          <path opacity="0.3" d="M24.0424 109.61V104.057C24.0424 101.011 19.8427 89.5476 15.1627 77.0574C13.9945 73.9379 13.0711 71.474 12.6896 70.3338C11.4298 66.5657 12.2579 52.8393 12.6123 46.9775C12.6631 46.1479 12.706 45.4399 12.7354 44.8895C12.8929 41.9597 12.2465 34.843 11.6953 29.5625C12.3839 30.6455 12.9287 31.7085 13.1205 32.5696C13.5049 34.2955 13.9143 39.7507 14.3087 45.0269C14.6867 50.0677 15.0439 54.8292 15.4183 57.1392C15.7998 59.4963 16.6988 61.492 17.5678 63.4219C18.5707 65.648 19.517 67.7504 19.7747 70.4561C20.2257 75.2027 24.5005 102.265 25.6665 109.61H24.0409L24.0424 109.61Z" fill="#232323"/>
+          <path opacity="0.3" d="M21.0689 67.3027C21.0689 67.3027 18.3725 75.473 18.3789 78.6799C18.3854 81.8867 19.7239 95.3841 19.7239 95.3841L21.7203 101.249L22.7833 81.0807L21.5622 69.5862L21.0689 67.3027Z" fill="#232323"/>
+          <path d="M23.1941 0.0641974C22.9371 0.928899 17.6079 23.8464 18.474 33.7919C19.3401 43.7374 23.4511 53.6828 23.1941 59.0872C22.9371 64.4923 20.703 70.7621 20.7925 77.0319C20.882 83.3017 22.1662 111.192 22.1662 111.192H25.7631C25.7631 111.192 26.0201 76.5996 27.8189 71.6268C29.6178 66.6541 32.7008 57.3578 32.1868 50.0064C31.6729 42.655 29.1038 26.8728 27.8189 19.9545C26.5341 13.0361 23.1941 0.0634766 23.1941 0.0634766V0.0641974Z" fill="#16BE00"/>
+        </svg>
+      </div>
+
+      <!-- Step content blocks with numbers placed roughly where they are in the reference -->
+      <!-- Step 1: Top right -->
+      <div class="step right" style="top:40px;">
+        <div style="width:60px;display:flex;align-items:center;justify-content:center;">
+          <div class="num-dot">1</div>
+        </div>
+        <div class="content">
+          <div class="title">Captivating Design Blueprint</div>
+          <div class="desc">Captivating design optimizes space with smart layouts, modular storage, and cohesive décor.</div>
+        </div>
+      </div>
+
+      <!-- Step 2: upper-left -->
+      <div class="step left" style="top:210px;">
+        <div style="width:60px;display:flex;align-items:center;justify-content:flex-start;">
+          <div class="num-dot">2</div>
+        </div>
+        <div class="content">
+          <div class="title">Technical Excellence Method</div>
+          <div class="desc">Ensures precise, functional, and aesthetic design through modular optimization while controlling costs efficiently.</div>
+        </div>
+      </div>
+
+      <!-- Step 3: middle-right -->
+      <div class="step right" style="top:400px;">
+        <div style="width:60px;display:flex;align-items:center;justify-content:center;">
+          <div class="num-dot">3</div>
+        </div>
+        <div class="content">
+          <div class="title">Switch Sense Method</div>
+          <div class="desc">Smart electrical planning ensures convenience, functionality, aesthetics, and proper wiring.</div>
+        </div>
+      </div>
+
+      <!-- Step 4: lower-left -->
+      <div class="step left" style="top:560px;">
+        <div style="width:60px;display:flex;align-items:center;justify-content:flex-start;">
+          <div class="num-dot">4</div>
+        </div>
+        <div class="content">
+          <div class="title">Material Wisdom Process</div>
+          <div class="desc">Focuses on textures, finishes, durable, low-maintenance, cost-effective design elements.</div>
+        </div>
+      </div>
+
+      <!-- Step 5: lower-right -->
+      <div class="step right" style="top:740px;">
+        <div style="width:60px;display:flex;align-items:center;justify-content:center;">
+          <div class="num-dot">5</div>
+        </div>
+        <div class="content">
+          <div class="title">Budget Brilliance Blueprint</div>
+          <div class="desc">Smart electrical planning ensures convenience, functionality, aesthetics, and proper wiring.</div>
+        </div>
+      </div>
+
+      <!-- Step 6: bottom-left -->
+      <div class="step left" style="top:900px;">
+        <div style="width:60px;display:flex;align-items:center;justify-content:flex-start;">
+          <div class="num-dot">6</div>
+        </div>
+        <div class="content">
+          <div class="title">Pulse Control Process</div>
+          <div class="desc">Ensures projects run smoothly with timelines, updates, checks, and quality.</div>
+        </div>
+      </div>
+
+      <!-- Additional side SVGs: hanging lamp, hanging plants, cat and characters -->
+      <div class="svg-side side-lamp" aria-hidden>
+        <!-- hanging lamp svg from user (embedded) -->
+        <svg viewBox="0 0 84 337" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <g clip-path="url(#clip0_272_845)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.60307 293.407H82.2151C83.4842 291.715 83.2943 289.98 82.2151 288.227L52.3083 250.118H32.7877L1.60307 288.219C0.731074 289.988 0.38573 291.732 1.60307 293.407ZM39.9967 314.353C39.9967 313.273 40.8774 312.393 41.9566 312.393C43.0358 312.393 43.9164 313.273 43.9164 314.353V334.486C43.9164 335.565 43.0358 336.446 41.9566 336.446C40.8774 336.446 39.9967 335.565 39.9967 334.486V314.353ZM57.5057 311.357C56.72 310.623 56.6682 309.397 57.4021 308.603C58.1359 307.817 59.3619 307.765 60.1562 308.499L75.6794 322.857C76.4651 323.59 76.5169 324.816 75.783 325.611C75.0492 326.396 73.8146 326.448 73.0289 325.714L57.5057 311.357ZM24.2577 308.456C25.0692 307.748 26.3038 307.826 27.0118 308.637C27.7197 309.449 27.642 310.683 26.8305 311.391L11.3072 324.972C10.4957 325.68 9.26108 325.602 8.55312 324.791C7.84517 323.979 7.92287 322.744 8.73443 322.036L24.2577 308.456ZM39.4228 231.304H44.1754V238.031C48.3886 239.042 51.5399 242.849 51.5399 247.356V247.977H32.3732V247.356C32.3732 242.849 35.2096 239.042 39.4228 238.031V231.304ZM42.1033 306.824C47.2749 306.824 51.514 302.594 51.514 297.413V296.809H32.6927V297.413C32.6927 302.594 36.9232 306.824 42.1033 306.824Z" fill="#232323"/>
+          </g>
+          <rect x="39.3965" y="0.713867" width="4.78402" height="230.59" fill="#232323"/>
+          <defs>
+            <clipPath id="clip0_272_845">
+              <rect width="82.2783" height="106.09" fill="white" transform="translate(0.792969 230.347)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="svg-side side-hangplant" aria-hidden>
+        <!-- hanging plant (user-provided) -->
+        <svg viewBox="0 0 61 132" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <!-- embed from user -->
+          <path d="M10.3145 102.437H10.201C10.1295 102.424 10.0615 102.396 10.0008 102.356C9.94014 102.316 9.88809 102.264 9.84772 102.203C9.80736 102.143 9.77947 102.075 9.76572 102.004C9.75196 101.932 9.75261 101.859 9.76761 101.787L29.5805 33.113C29.5876 33.0348 29.6113 32.9589 29.6498 32.8904C29.6884 32.8219 29.741 32.7623 29.8042 32.7156C29.8674 32.6689 29.9397 32.6361 30.0165 32.6193C30.0933 32.6025 30.1728 32.6022 30.2497 32.6183C30.3266 32.6344 30.3993 32.6666 30.4629 32.7128C30.5265 32.759 30.5796 32.8181 30.6187 32.8863C30.6578 32.9544 30.6821 33.0301 30.6899 33.1083C30.6977 33.1865 30.6889 33.2655 30.664 33.3401L10.8718 101.994C10.8472 102.122 10.7775 102.237 10.6753 102.319C10.5731 102.4 10.4451 102.442 10.3145 102.437ZM50.0332 102.902C50.1047 102.888 50.1727 102.861 50.2334 102.82C50.2941 102.78 50.3461 102.728 50.3865 102.668C50.4268 102.607 50.4547 102.539 50.4685 102.468C50.4822 102.396 50.4816 102.323 50.4666 102.252L30.664 33.113C30.6493 33.0411 30.6205 32.9729 30.5793 32.9121C30.538 32.8514 30.4852 32.7994 30.4238 32.7591C30.3625 32.7188 30.2938 32.6911 30.2216 32.6774C30.1495 32.6638 30.0754 32.6645 30.0036 32.6796C29.8603 32.7117 29.7354 32.7991 29.6562 32.9228C29.5769 33.0465 29.5497 33.1964 29.5805 33.3401L49.3727 102.479C49.4006 102.604 49.4698 102.715 49.5691 102.796C49.6683 102.876 49.7918 102.921 49.9197 102.922L50.0332 102.902Z" fill="#232323"/>
+          <path d="M47.9178 108.331H12.0586L15.7632 123.81C16.0418 125.678 17.4143 127.494 19.8909 128.918C25.4736 132.137 34.5132 132.137 40.0856 128.918C42.7479 127.38 44.1204 125.399 44.2132 123.387L47.9178 108.331Z" fill="#16BE00"/>
+          <!-- rest omitted for brevity -->
+        </svg>
+      </div>
+
+      <div class="svg-side side-step2" aria-hidden>
+        <!-- small plant at left mid -->
+        <svg viewBox="0 0 46 133" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <!-- same plant svg used again (scaled) -->
+          <path d="M0.793265 53.8975C0.793265 53.8975 0.0223511 73.5716 2.33514 78.9767C4.64793 84.3818 11.0709 87.1928 12.0988 93.2464C13.1267 99.3 18.5225 111.191 18.5225 111.191H21.0916C21.0916 111.191 17.2376 94.1111 14.9248 88.706C12.612 83.3009 8.24415 77.4634 6.18906 72.0583C4.13324 66.6532 0.793265 53.8975 0.793265 53.8975Z" fill="#16BE00"/>
+        </svg>
+      </div>
+
+      <div class="svg-side side-cat" aria-hidden>
+        <!-- placeholder cat: small boxed svg simple -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <g transform="translate(4,6)">
+            <rect x="0" y="20" width="32" height="24" rx="4" fill="#fff" stroke="#232" />
+            <circle cx="12" cy="26" r="3" fill="#8b8b8b"/>
+            <circle cx="24" cy="26" r="3" fill="#8b8b8b"/>
+            <path d="M10 34c4 4 12 4 14 0" stroke="#555" stroke-width="1.5" fill="none"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="svg-side side-woman1" aria-hidden>
+        <!-- small person placeholder (left bottom), simpler vector for fast embedding -->
+        <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <g fill="none" stroke="#232">
+            <path d="M28 120v-52h32v52" stroke-width="3" fill="#fff"/>
+            <circle cx="44" cy="44" r="16" fill="#fff" stroke-width="3"/>
+            <path d="M24 80c6 8 18 8 24 0" stroke-width="2"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="svg-side side-woman2" aria-hidden>
+        <!-- small person placeholder (right mid) -->
+        <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <g fill="none" stroke="#232">
+            <path d="M28 120v-52h32v52" stroke-width="3" fill="#fff"/>
+            <circle cx="44" cy="44" r="16" fill="#fff" stroke-width="3"/>
+            <path d="M24 80c6 8 18 8 24 0" stroke-width="2"/>
+          </g>
+        </svg>
+      </div>
+
+    </div> <!-- end stair-area -->
+
+    <div class="bottom-spacing"></div>
+
+  </main>
+
+  <!-- Footer (minimal) -->
+  <footer style="background:#111;padding:44px 0;color:#ddd">
+    <div style="max-width:1200px;margin:0 auto;display:flex;gap:28px;align-items:flex-start;justify-content:space-between;padding:0 28px">
+      <div style="flex:1;max-width:360px">
+        <div style="width:44px;height:44px;border-radius:999px;background:#fff;margin-bottom:12px"></div>
+        <p style="color:#888;font-size:13px;line-height:1.45">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div style="flex:1;display:flex;gap:36px">
+        <div>
+          <h4 style="color:#fff;font-size:14px;margin:0 0 8px">Support</h4>
+          <ul style="list-style:none;padding:0;margin:0;color:#888;font-size:13px">
+            <li>Help</li><li>FAQ</li><li>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#fff;font-size:14px;margin:0 0 8px">Company</h4>
+          <ul style="list-style:none;padding:0;margin:0;color:#888;font-size:13px">
+            <li>About</li><li>Careers</li><li>Press kit</li>
+          </ul>
+        </div>
+      </div>
+      <div style="flex:1;max-width:260px">
+        <h4 style="color:#fff;font-size:14px;margin:0 0 8px">Subscribe</h4>
+        <div style="display:flex;gap:8px">
+          <input placeholder="email@diazastudio.com" style="flex:1;padding:10px;border-radius:22px;border:none;background:#222;color:#ccc" />
+          <button style="padding:10px 12px;border-radius:22px;background:#444;border:none;color:#fff">→</button>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;color:#777;padding-top:20px;font-size:13px">diazastudio © 2025. All Rights Reserved</div>
+  </footer>
+
+</body>
+</html>

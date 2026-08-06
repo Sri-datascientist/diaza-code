@@ -1,0 +1,32 @@
+# Python virtual environment and cache
+backend/diaz/
+backend/venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node/Frontend dependencies and build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Local Environment and Secrets
+.env
+frontend/.env
+backend/.env
+backend/env-vars.json
+backend/lambda-env-clean.json
+**/*.pem
+**/*.key
+
+# IDEs and System files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

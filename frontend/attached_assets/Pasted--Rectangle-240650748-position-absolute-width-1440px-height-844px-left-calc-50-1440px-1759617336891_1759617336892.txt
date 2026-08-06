@@ -1,0 +1,653 @@
+/* Rectangle 240650748 */
+
+position: absolute;
+width: 1440px;
+height: 844px;
+left: calc(50% - 1440px/2 + 29px);
+top: 848px;
+
+background: #FFFAEF;
+
+
+/* Rectangle 240650742 */
+
+position: absolute;
+width: 1440px;
+height: 848px;
+left: 0px;
+top: 0px;
+
+background: url(DSC05046-HDR.jpg);
+
+
+/* Rectangle 240650749 */
+
+position: absolute;
+width: 1440px;
+height: 848px;
+left: 0px;
+top: 0px;
+
+background: rgba(61, 61, 61, 0.5);
+
+
+/* Rectangle 240650737 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1179px;
+height: 95px;
+left: calc(50% - 1179px/2 + 0.5px);
+top: 53px;
+
+background: linear-gradient(90deg, #545454 0%, #343434 100%);
+box-shadow: 0px 131px 53px rgba(205, 161, 86, 0.01), 0px 74px 44px rgba(205, 161, 86, 0.05), 0px 33px 33px rgba(205, 161, 86, 0.09), 0px 8px 18px rgba(205, 161, 86, 0.1);
+border-radius: 100px;
+
+
+/* Home */
+
+position: absolute;
+width: 67px;
+height: 16px;
+left: calc(50% - 67px/2 - 503.5px);
+top: 93px;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120px;
+/* or 500% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Services */
+
+position: absolute;
+width: 95px;
+height: 16px;
+left: calc(50% - 95px/2 - 355.5px);
+top: 93px;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120px;
+/* or 500% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* About */
+
+position: absolute;
+width: 67px;
+height: 16px;
+left: calc(50% - 67px/2 - 207.5px);
+top: 93px;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120px;
+/* or 500% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 2087330247 */
+
+position: absolute;
+width: 132px;
+height: 16px;
+left: calc(50% - 132px/2);
+top: 807px;
+
+
+
+/* Ellipse 13573 */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 683px;
+top: 807px;
+
+background: rgba(255, 255, 255, 0.25);
+
+
+/* Ellipse 13577 */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 654px;
+top: 807px;
+
+background: rgba(255, 255, 255, 0.25);
+
+
+/* Ellipse 13574 */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 712px;
+top: 807px;
+
+background: #FFFFFF;
+
+
+/* Ellipse 13575 */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 741px;
+top: 807px;
+
+background: rgba(255, 255, 255, 0.25);
+
+
+/* Ellipse 13576 */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 770px;
+top: 807px;
+
+background: rgba(255, 255, 255, 0.25);
+
+
+/* Group 2147226561 */
+
+position: absolute;
+width: 926px;
+height: 461px;
+left: 257px;
+top: 248px;
+
+
+
+/* Frame 2147226543 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 31px 533px;
+gap: 10px;
+
+position: absolute;
+width: 237px;
+height: 95px;
+left: calc(50% - 237px/2 + 0.5px);
+top: 614px;
+
+background: rgba(255, 255, 255, 0.5);
+border-radius: 100px;
+
+
+/* Explore */
+
+width: 119px;
+height: 26px;
+
+font-family: 'Inter Tight';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 73px;
+/* or 203% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 2147226559 */
+
+position: absolute;
+width: 926px;
+height: 288px;
+left: 257px;
+top: 248px;
+
+
+
+/* Lorem Ipsum is Simply dummy text of the Printing */
+
+position: absolute;
+width: 926px;
+height: 200px;
+left: calc(50% - 926px/2);
+top: 248px;
+
+font-family: 'Vigosamine';
+font-style: normal;
+font-weight: 400;
+font-size: 92px;
+line-height: 100px;
+/* or 109% */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+
+/* Lorem Ipsum is Simply dummy text of the Printing Lorem Ipsum is Simply dummy text of the Printing */
+
+position: absolute;
+width: 714px;
+height: 55px;
+left: calc(50% - 714px/2);
+top: 481px;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 37px;
+/* or 137% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+
+/* Component 47 */
+
+position: absolute;
+width: 2515px;
+height: 315px;
+left: calc(50% - 2515px/2 - 155.5px);
+top: 930px;
+
+
+
+/* Frame 2147226544 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 35px;
+
+position: absolute;
+width: 2745px;
+height: 315px;
+left: -230px;
+top: 0px;
+
+
+
+/* 1 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04885-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 2 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04891-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 3 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04909-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* 4 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04950-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* 5 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04974-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* 6 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05094-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* 7 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05181-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* 8 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04950-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* 9 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04918-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* 10 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05064-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* Component 49 */
+
+position: absolute;
+width: 3276px;
+height: 315px;
+left: -741px;
+top: 1295px;
+
+
+
+/* Frame 2147226545 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 62px;
+
+position: absolute;
+width: 5698px;
+height: 315px;
+left: -2242px;
+top: 0px;
+
+
+
+/* 8 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05022-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 9 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05175-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 10 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05136-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* 11 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05142-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* 12 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04909-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* 13 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05181-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* 14 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05028-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* 15 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05064-HDR.jpg);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* 16 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC05136-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* 17 */
+
+width: 514px;
+height: 315px;
+
+background: url(DSC04950-HDR);
+border-radius: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* image 1 */
+
+position: absolute;
+width: 132px;
+height: 134px;
+left: calc(50% - 132px/2);
+top: 39px;
+
+background: url(image);
+border-radius: 453px;

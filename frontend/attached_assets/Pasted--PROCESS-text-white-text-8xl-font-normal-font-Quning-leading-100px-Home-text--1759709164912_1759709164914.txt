@@ -1,0 +1,253 @@
+// PROCESS
+text-white
+text-8xl
+font-normal
+font-['Quning']
+leading-[100px]
+---
+// Home
+text-white
+text-2xl
+font-normal
+font-['Inria_Serif']
+leading-[120px]
+---
+// Project
+text-white
+text-2xl
+font-normal
+font-['Inria_Serif']
+leading-[120px]
+---
+// About
+text-white
+text-2xl
+font-normal
+font-['Inria_Serif']
+leading-[120px]
+---
+// Process
+text-white
+text-2xl
+font-normal
+font-['Inria_Serif']
+leading-[120px]
+---
+// Contact 
+text-white
+text-2xl
+font-normal
+font-['Inria_Serif']
+leading-[120px]
+---
+// Reviews
+text-white
+text-2xl
+font-normal
+font-['Inria_Serif']
+leading-[120px]
+---
+// Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+text-white/70
+text-base
+font-normal
+font-['Inter_Tight']
+leading-relaxed
+---
+// Support
+text-white
+text-2xl
+font-normal
+font-['Inter_Tight']
+leading-10
+---
+// Help
+text-white/70
+text-xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// FAQ
+text-white/70
+text-xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// Contact
+text-white/70
+text-xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// Company
+text-white
+text-2xl
+font-normal
+font-['Inter_Tight']
+leading-10
+---
+// About
+text-white/70
+text-xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// Careers
+text-white/70
+text-xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// Pless kit
+text-white/70
+text-xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// Subscribe to newsletter.
+text-white
+text-2xl
+font-normal
+font-['Inter_Tight']
+leading-loose
+---
+// Curious about developments.
+text-white/60
+text-base
+font-normal
+font-['Inter_Tight']
+leading-normal
+---
+// email@diazastudio.com
+text-white/40
+text-base
+font-normal
+font-['Inter_Tight']
+leading-normal
+---
+// diazastudio © 2025. All Rights Reserved
+text-white
+text-base
+font-normal
+font-['Inter_Tight']
+leading-relaxed
+---
+// Captivating Design Blueprint
+text-neutral-800
+text-lg
+font-semibold
+font-['Inter']
+---
+// Captivating design optimizes space with smart layouts, modular storage, and cohesive décor.
+text-neutral-800
+text-sm
+font-normal
+font-['Inter']
+---
+// 1
+text-white
+text-5xl
+font-semibold
+font-['Inter']
+leading-[48.04px]
+---
+// Switch Sense Method
+text-neutral-800
+text-lg
+font-semibold
+font-['Inter']
+---
+// Smart electrical planning ensures convenience, functionality, aesthetics, and proper wiring.
+text-neutral-800
+text-sm
+font-normal
+font-['Inter']
+---
+// 3
+text-white
+text-5xl
+font-semibold
+font-['Inter']
+leading-[48.04px]
+---
+// Budget Brilliance Blueprint
+text-neutral-800
+text-lg
+font-semibold
+font-['Inter']
+---
+// Smart electrical planning ensures convenience, functionality, aesthetics, and proper wiring.
+text-neutral-800
+text-sm
+font-normal
+font-['Inter']
+---
+// 5
+text-white
+text-5xl
+font-semibold
+font-['Inter']
+leading-[48.04px]
+---
+// Pulse Control Process
+text-neutral-800
+text-lg
+font-semibold
+font-['Inter']
+---
+// Ensures projects run smoothly with timelines, updates, checks, and quality.
+text-neutral-800
+text-sm
+font-normal
+font-['Inter']
+---
+// 6
+text-white
+text-5xl
+font-semibold
+font-['Inter']
+leading-[48.04px]
+---
+// Technical Excellence Method
+text-neutral-800
+text-lg
+font-semibold
+font-['Inter']
+---
+// Ensures precise, functional, and aesthetic design through modular optimization while controlling costs efficiently.
+text-neutral-800
+text-sm
+font-normal
+font-['Inter']
+---
+// 2
+text-white
+text-5xl
+font-semibold
+font-['Inter']
+leading-[48.04px]
+---
+// Material Wisdom Process
+text-neutral-800
+text-lg
+font-semibold
+font-['Inter']
+---
+// Focuses on textures, finishes, durable, low-maintenance, cost-effective design elements.
+text-neutral-800
+text-sm
+font-normal
+font-['Inter']
+---
+// 4
+text-white
+text-5xl
+font-semibold
+font-['Inter']
+leading-[48.04px]

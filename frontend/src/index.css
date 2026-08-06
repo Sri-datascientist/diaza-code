@@ -1,0 +1,240 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --bexs-blueprimary: rgba(67, 54, 247, 1);
+  --body-s-font-family: "Inter", Helvetica;
+  --body-s-font-size: 14px;
+  --body-s-font-style: normal;
+  --body-s-font-weight: 400;
+  --body-s-letter-spacing: -0.09000000357627869px;
+  --body-s-line-height: 24px;
+  --content-button-font-family: "Inter", Helvetica;
+  --content-button-font-size: 14px;
+  --content-button-font-style: normal;
+  --content-button-font-weight: 500;
+  --content-button-letter-spacing: -0.09000000357627869px;
+  --content-button-line-height: 24px;
+  --neutral-0: rgba(255, 255, 255, 1);
+  --neutral-400: rgba(172, 180, 195, 1);
+  --neutral-800: rgba(22, 28, 40, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: hsl(40, 25%, 97%);
+    --foreground: hsl(25, 20%, 25%);
+
+    --muted: hsl(35, 20%, 90%);
+    --muted-foreground: hsl(30, 15%, 45%);
+
+    --popover: hsl(40, 30%, 98%);
+    --popover-foreground: hsl(25, 20%, 25%);
+
+    --border: hsl(35, 25%, 85%);
+    --input: hsl(35, 25%, 88%);
+
+    --card: hsl(40, 35%, 96%);
+    --card-foreground: hsl(25, 20%, 25%);
+
+    --primary: hsl(25, 35%, 40%);
+    --primary-foreground: hsl(40, 30%, 98%);
+
+    --secondary: hsl(35, 25%, 85%);
+    --secondary-foreground: hsl(25, 20%, 25%);
+
+    --accent: hsl(30, 40%, 75%);
+    --accent-foreground: hsl(25, 25%, 20%);
+
+    --destructive: hsl(0, 70%, 50%);
+    --destructive-foreground: hsl(40, 30%, 98%);
+
+    --ring: hsl(30, 35%, 60%);
+
+    --radius: 0.5rem;
+
+    --warm-white: hsl(40, 30%, 98%);
+    --cream: hsl(40, 25%, 94%);
+    --light-beige: hsl(35, 25%, 85%);
+    --medium-beige: hsl(30, 30%, 70%);
+    --warm-brown: hsl(25, 35%, 40%);
+    --dark-brown: hsl(25, 30%, 25%);
+    --taupe: hsl(30, 20%, 55%);
+  }
+
+  .dark {
+    --background: hsl(25, 25%, 12%);
+    --foreground: hsl(40, 25%, 92%);
+
+    --muted: hsl(25, 20%, 20%);
+    --muted-foreground: hsl(35, 15%, 65%);
+
+    --accent: hsl(30, 30%, 28%);
+    --accent-foreground: hsl(40, 25%, 95%);
+
+    --popover: hsl(25, 25%, 15%);
+    --popover-foreground: hsl(35, 20%, 85%);
+
+    --border: hsl(25, 20%, 25%);
+    --input: hsl(25, 20%, 25%);
+
+    --card: hsl(25, 25%, 14%);
+    --card-foreground: hsl(40, 25%, 92%);
+
+    --primary: hsl(30, 40%, 75%);
+    --primary-foreground: hsl(25, 25%, 15%);
+
+    --secondary: hsl(25, 20%, 22%);
+    --secondary-foreground: hsl(40, 25%, 95%);
+
+    --destructive: hsl(0, 60%, 45%);
+    --destructive-foreground: hsl(40, 25%, 95%);
+
+    --ring: hsl(30, 30%, 35%);
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -10,15 +10,13 @@ export interface DriveImageData {
   roomType: string;
 }
 
-// Project 3 Drive Photos (https://drive.google.com/drive/folders/1z4kXJQ1cyZaEcODD4C-QolDD9Oc2tieB)
+// Project 3 Drive Photos (Horizontal & Vertical edited collections)
 const PROJECT_3_DRIVE_FILES = [
-  "DSC03416.jpg",
-  "DSC03427.jpg",
-  "DSC03430.jpg",
-  "DSC03574.jpg",
-  "DSC03620.jpg",
-  "DSC03624.jpg",
-  "DSC03629.jpg"
+  "DSC03416.jpg", "DSC03427.jpg", "DSC03430.jpg", "DSC03574.jpg", "DSC03620.jpg", "DSC03624.jpg", "DSC03629.jpg",
+  "DSC03466.jpg", "DSC03484.jpg", "DSC03498.jpg", "DSC03519.jpg", "DSC03525.jpg", "DSC03540.jpg", "DSC03561.jpg",
+  "DSC03605.jpg", "DSC03609.jpg", "DSC03636.jpg", "DSC03642.jpg", "DSC03711.jpg", "DSC03723.jpg", "DSC03730.jpg",
+  "DSC03733.jpg", "DSC03736.jpg", "DSC03741.jpg", "DSC03747.jpg", "DSC03762.jpg", "DSC03777.jpg", "DSC03783.jpg",
+  "DSC03786.jpg", "DSC03819.jpg", "DSC03827.jpg"
 ];
 
 // Project Google Photos Album (https://photos.app.goo.gl/4ynHcu712tdxUafs9)

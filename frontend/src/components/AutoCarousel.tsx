@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { S3Image, S3ImageResponse } from "@shared/schema";
+import { S3ImageResponse } from "@shared/schema";
+import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
 
 interface AutoCarouselProps {
   folderPath?: string;
@@ -14,14 +15,13 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
     queryKey: ['/api/public/s3/images', folderPath],
   });
 
-  const [duplicatedImages, setDuplicatedImages] = useState<S3Image[]>([]);
-  const [firstRowImages, setFirstRowImages] = useState<S3Image[]>([]);
-  const [secondRowImages, setSecondRowImages] = useState<S3Image[]>([]);
+  const [duplicatedImages, setDuplicatedImages] = useState<any[]>([]);
+  const [firstRowImages, setFirstRowImages] = useState<any[]>([]);
+  const [secondRowImages, setSecondRowImages] = useState<any[]>([]);
 
   useEffect(() => {
-    if (data?.images && data.images.length > 0) {
-      const images = data.images;
-      
+    const images = (data?.images && data.images.length > 0) ? data.images : LOCAL_DRIVE_IMAGES;
+    if (images && images.length > 0) {
       if (showTwoRows) {
         // First row: top-to-bottom sequence (original order)
         const firstRow = [...images, ...images, ...images];
@@ -65,10 +65,11 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
     );
   }
 
-  if (!data?.images || data.images.length === 0) {
+  const activeImages = (data?.images && data.images.length > 0) ? data.images : LOCAL_DRIVE_IMAGES;
+  if (!activeImages || activeImages.length === 0) {
     return (
       <div className={`text-center py-8 ${className}`}>
-        <p className="text-[#8B7355]">No images found in S3 bucket</p>
+        <p className="text-[#8B7355]">No images found</p>
       </div>
     );
   }

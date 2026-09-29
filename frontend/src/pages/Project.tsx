@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import luxuryLivingRoom from "@assets/stock_images/modern_luxury_interi_d54f89a0.jpg";
 import { DecorativeDivider1, DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
 import type { S3ImageResponse } from "@shared/schema";
+import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
 
 export default function Project() {
   const [scrollY, setScrollY] = useState(0);
@@ -20,7 +21,8 @@ export default function Project() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const imageCount = data?.images?.length || 0;
+  const imagesToDisplay = (data?.images && data.images.length > 0) ? data.images : LOCAL_DRIVE_IMAGES;
+  const imageCount = imagesToDisplay.length;
 
   return (
     <div className="min-h-screen">
@@ -117,7 +119,7 @@ export default function Project() {
                 <div key={i} className="w-full h-[350px] bg-[#D4C4B0]/30 rounded-xl" />
               ))}
             </div>
-          ) : !data?.images || data.images.length === 0 ? (
+          ) : imagesToDisplay.length === 0 ? (
             <div className="text-center py-20">
               <div className="inline-block p-8 bg-white rounded-2xl shadow-lg">
                 <p 
@@ -127,7 +129,7 @@ export default function Project() {
                   No Projects Yet
                 </p>
                 <p className="text-[#8B7355]/70 font-inria">
-                  Please add images to your S3 bucket.
+                  Please add images to your folder or S3 bucket.
                 </p>
               </div>
             </div>
@@ -136,14 +138,14 @@ export default function Project() {
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
               data-testid="project-gallery"
             >
-              {data.images.slice().reverse().map((image, index) => (
+              {imagesToDisplay.map((image, index) => (
                 <div
                   key={image.id}
                   className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 animate-fade-up bg-white"
                   style={{ 
-                    animationDelay: `${index * 0.08}s`,
+                    animationDelay: `${index * 0.05}s`,
                     opacity: 0,
-                    animation: `fade-up 0.8s ${index * 0.08}s ease forwards`
+                    animation: `fade-up 0.8s ${index * 0.05}s ease forwards`
                   }}
                   data-testid={`project-image-${index}`}
                 >

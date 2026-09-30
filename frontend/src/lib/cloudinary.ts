@@ -58,6 +58,13 @@ export function getCloudinaryUrl(
   }
 
   const key = normalizePath(pathOrKey);
+
+  // If Cloudinary is explicitly disabled or not configured with a custom cloud, use local path directly
+  const isCloudinaryActive = Boolean((import.meta as any).env?.VITE_CLOUDINARY_CLOUD_NAME);
+  if (!isCloudinaryActive) {
+    return pathOrKey;
+  }
+
   const mapped = (cloudinaryData.images as Record<string, any>)[key];
 
   if (!mapped) {

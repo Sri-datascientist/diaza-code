@@ -90,6 +90,7 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
           >
             {firstRowImages.map((image, index) => {
               const rawSrc = image.s3_url || '';
+              const fallback = image.localPath || rawSrc;
               const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
               const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
               return (
@@ -106,6 +107,13 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
                     className="w-full h-full object-cover"
                     loading="lazy"
                     decoding="async"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (fallback && target.src !== fallback && !target.src.endsWith(fallback)) {
+                        target.srcset = "";
+                        target.src = fallback;
+                      }
+                    }}
                   />
                 </div>
               );
@@ -125,6 +133,7 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
           >
             {secondRowImages.map((image, index) => {
               const rawSrc = image.s3_url || '';
+              const fallback = image.localPath || rawSrc;
               const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
               const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
               return (
@@ -141,6 +150,13 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
                     className="w-full h-full object-cover"
                     loading="lazy"
                     decoding="async"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (fallback && target.src !== fallback && !target.src.endsWith(fallback)) {
+                        target.srcset = "";
+                        target.src = fallback;
+                      }
+                    }}
                   />
                 </div>
               );
@@ -183,6 +199,7 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
       >
         {duplicatedImages.map((image, index) => {
           const rawSrc = image.s3_url || '';
+          const fallback = image.localPath || rawSrc;
           const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
           const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
           return (
@@ -199,6 +216,13 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (fallback && target.src !== fallback && !target.src.endsWith(fallback)) {
+                    target.srcset = "";
+                    target.src = fallback;
+                  }
+                }}
               />
             </div>
           );

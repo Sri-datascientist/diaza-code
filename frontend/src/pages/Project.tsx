@@ -38,6 +38,9 @@ export default function Project() {
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
+            onError={(e) => {
+              e.currentTarget.src = luxuryLivingRoom;
+            }}
             style={{
               transform: `translateY(${scrollY * 0.5}px)`,
               transition: 'transform 0.1s ease-out',
@@ -167,6 +170,14 @@ export default function Project() {
                         className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-700 ease-out"
                         loading="lazy"
                         decoding="async"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          const fallback = (image as any).localPath || rawSrc;
+                          if (fallback && target.src !== fallback && !target.src.endsWith(fallback)) {
+                            target.srcset = "";
+                            target.src = fallback;
+                          }
+                        }}
                       />
                     </div>
                   </div>

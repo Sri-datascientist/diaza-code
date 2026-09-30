@@ -5,6 +5,7 @@ export interface DriveImageData {
   name: string;
   s3_url: string; // compatibility with S3Image type
   s3_key: string;
+  localPath: string;
   fileName: string;
   fileType: string;
   size: number;
@@ -97,6 +98,7 @@ const p3DriveImages: DriveImageData[] = PROJECT_3_DRIVE_FILES.map((fileName, idx
     name: `Featured Project Interior ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
     s3_key: `project_3_drive/${fileName}`,
+    localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
@@ -112,6 +114,7 @@ const pGphotosImages: DriveImageData[] = PROJECT_GPHOTOS_FILES.map((fileName, id
     name: `Project Showcase ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
     s3_key: `project_photos/${fileName}`,
+    localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
@@ -127,6 +130,7 @@ const p2Images: DriveImageData[] = PROJECT_2_FILES.map((fileName, idx) => {
     name: `Kitchen & House Interior ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
     s3_key: `project_2/${fileName}`,
+    localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
@@ -142,6 +146,7 @@ const newGalleryImages: DriveImageData[] = NEW_GALLERY_FILES.map((fileName, idx)
     name: `Gallery Portfolio ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
     s3_key: `gallery_new/${fileName}`,
+    localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
@@ -157,6 +162,7 @@ const galleryImages: DriveImageData[] = GALLERY_FILES.map((fileName, idx) => {
     name: fileName.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " "),
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
     s3_key: `gallery/${fileName}`,
+    localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
@@ -172,4 +178,3 @@ export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
   ...newGalleryImages,
   ...galleryImages
 ];
-

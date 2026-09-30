@@ -1,725 +1,727 @@
 {
-  "cloudName": "diaza-studio",
-  "baseUrl": "https://res.cloudinary.com/diaza-studio/image/upload",
+  "cloudName": "nw9o0vrv",
+  "baseUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload",
   "totalCount": 120,
+  "missingCount": 0,
+  "missingFiles": [],
   "images": {
     "/drive_images/gallery/DSC03315-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03315-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03315-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772518/diaza_studio/drive_images/gallery/DSC03315-01.jpg",
       "fileName": "DSC03315-01.jpeg",
       "size": 5688957
     },
     "/drive_images/gallery/DSC03320-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03320-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03320-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772520/diaza_studio/drive_images/gallery/DSC03320-01.jpg",
       "fileName": "DSC03320-01.jpeg",
       "size": 7160420
     },
     "/drive_images/gallery/DSC03323-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03323-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03323-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772521/diaza_studio/drive_images/gallery/DSC03323-01.jpg",
       "fileName": "DSC03323-01.jpeg",
       "size": 3292150
     },
     "/drive_images/gallery/DSC03356.JPG": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03356",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03356",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03356",
       "fileName": "DSC03356.JPG",
       "size": 12582912
     },
     "/drive_images/gallery/DSC03361-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03361-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03361-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772524/diaza_studio/drive_images/gallery/DSC03361-01.jpg",
       "fileName": "DSC03361-01.jpeg",
       "size": 3340662
     },
     "/drive_images/gallery/DSC03370-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03370-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03370-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772525/diaza_studio/drive_images/gallery/DSC03370-01.jpg",
       "fileName": "DSC03370-01.jpeg",
       "size": 5973074
     },
     "/drive_images/gallery/DSC03394-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03394-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03394-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772526/diaza_studio/drive_images/gallery/DSC03394-01.jpg",
       "fileName": "DSC03394-01.jpeg",
       "size": 4996703
     },
     "/drive_images/gallery/DSC03398-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03398-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03398-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772527/diaza_studio/drive_images/gallery/DSC03398-01.jpg",
       "fileName": "DSC03398-01.jpeg",
       "size": 4538813
     },
     "/drive_images/gallery/DSC03411-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03411-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03411-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772529/diaza_studio/drive_images/gallery/DSC03411-01.jpg",
       "fileName": "DSC03411-01.jpeg",
       "size": 6052805
     },
     "/drive_images/gallery/DSC03415-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03415-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03415-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772530/diaza_studio/drive_images/gallery/DSC03415-01.jpg",
       "fileName": "DSC03415-01.jpeg",
       "size": 4110833
     },
     "/drive_images/gallery/DSC03424-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03424-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03424-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772531/diaza_studio/drive_images/gallery/DSC03424-01.jpg",
       "fileName": "DSC03424-01.jpeg",
       "size": 4237323
     },
     "/drive_images/gallery/DSC03429 (2)-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03429__2_-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03429__2_-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772532/diaza_studio/drive_images/gallery/DSC03429__2_-01.jpg",
       "fileName": "DSC03429 (2)-01.jpeg",
       "size": 7116559
     },
     "/drive_images/gallery/DSC03460.JPG": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03460",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03460",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03460",
       "fileName": "DSC03460.JPG",
       "size": 10878976
     },
     "/drive_images/gallery/DSC03470.JPG": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03470",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03470",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03470",
       "fileName": "DSC03470.JPG",
       "size": 11698176
     },
     "/drive_images/gallery/DSC03473.JPG": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03473",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03473",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03473",
       "fileName": "DSC03473.JPG",
       "size": 13369344
     },
     "/drive_images/gallery/DSC03500-01-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03500-01-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03500-01-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772536/diaza_studio/drive_images/gallery/DSC03500-01-01.jpg",
       "fileName": "DSC03500-01-01.jpeg",
       "size": 5144065
     },
     "/drive_images/gallery/DSC03507-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03507-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03507-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772538/diaza_studio/drive_images/gallery/DSC03507-01.jpg",
       "fileName": "DSC03507-01.jpeg",
       "size": 3298560
     },
     "/drive_images/gallery/DSC03511-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03511-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03511-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772539/diaza_studio/drive_images/gallery/DSC03511-01.jpg",
       "fileName": "DSC03511-01.jpeg",
       "size": 3342337
     },
     "/drive_images/gallery/DSC03512-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03512-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03512-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772540/diaza_studio/drive_images/gallery/DSC03512-01.jpg",
       "fileName": "DSC03512-01.jpeg",
       "size": 5633956
     },
     "/drive_images/gallery/DSC03532-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03532-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03532-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772542/diaza_studio/drive_images/gallery/DSC03532-01.jpg",
       "fileName": "DSC03532-01.jpeg",
       "size": 4294020
     },
     "/drive_images/gallery/DSC03546-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03546-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03546-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772543/diaza_studio/drive_images/gallery/DSC03546-01.jpg",
       "fileName": "DSC03546-01.jpeg",
       "size": 4642979
     },
     "/drive_images/gallery/DSC03548-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03548-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03548-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772544/diaza_studio/drive_images/gallery/DSC03548-01.jpg",
       "fileName": "DSC03548-01.jpeg",
       "size": 5934904
     },
     "/drive_images/gallery/DSC03578-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03578-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03578-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772545/diaza_studio/drive_images/gallery/DSC03578-01.jpg",
       "fileName": "DSC03578-01.jpeg",
       "size": 2186308
     },
     "/drive_images/gallery/DSC03592-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03592-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03592-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772546/diaza_studio/drive_images/gallery/DSC03592-01.jpg",
       "fileName": "DSC03592-01.jpeg",
       "size": 5723390
     },
     "/drive_images/gallery/DSC03592.JPG": {
       "publicId": "diaza_studio/drive_images/gallery/DSC03592",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03592",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/DSC03592",
       "fileName": "DSC03592.JPG",
       "size": 12648448
     },
     "/drive_images/gallery/IMG_20230217_164442-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery/IMG_20230217_164442-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery/IMG_20230217_164442-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772548/diaza_studio/drive_images/gallery/IMG_20230217_164442-01.jpg",
       "fileName": "IMG_20230217_164442-01.jpeg",
       "size": 1115755
     },
     "/drive_images/gallery_new/1688653086239-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery_new/1688653086239-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/1688653086239-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772549/diaza_studio/drive_images/gallery_new/1688653086239-01.jpg",
       "fileName": "1688653086239-01.jpeg",
       "size": 213955
     },
     "/drive_images/gallery_new/1688653086239-01_1.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery_new/1688653086239-01_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/1688653086239-01_1",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772549/diaza_studio/drive_images/gallery_new/1688653086239-01_1.jpg",
       "fileName": "1688653086239-01_1.jpeg",
       "size": 211030
     },
     "/drive_images/gallery_new/image.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/image",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/image",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772550/diaza_studio/drive_images/gallery_new/image.jpg",
       "fileName": "image.jpg",
       "size": 164921
     },
     "/drive_images/gallery_new/image_1.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/image_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/image_1",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772551/diaza_studio/drive_images/gallery_new/image_1.jpg",
       "fileName": "image_1.jpg",
       "size": 225540
     },
     "/drive_images/gallery_new/IMG_20230620_133829.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230620_133829",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230620_133829",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772551/diaza_studio/drive_images/gallery_new/IMG_20230620_133829.jpg",
       "fileName": "IMG_20230620_133829.jpg",
       "size": 159412
     },
     "/drive_images/gallery_new/IMG_20230706_184932.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_184932",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_184932",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772552/diaza_studio/drive_images/gallery_new/IMG_20230706_184932.jpg",
       "fileName": "IMG_20230706_184932.jpg",
       "size": 287485
     },
     "/drive_images/gallery_new/IMG_20230706_184954-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_184954-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_184954-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772553/diaza_studio/drive_images/gallery_new/IMG_20230706_184954-01.jpg",
       "fileName": "IMG_20230706_184954-01.jpeg",
       "size": 418897
     },
     "/drive_images/gallery_new/IMG_20230706_184954-01_1.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_184954-01_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_184954-01_1",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772554/diaza_studio/drive_images/gallery_new/IMG_20230706_184954-01_1.jpg",
       "fileName": "IMG_20230706_184954-01_1.jpeg",
       "size": 419139
     },
     "/drive_images/gallery_new/IMG_20230706_184954.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_184954",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_184954",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772555/diaza_studio/drive_images/gallery_new/IMG_20230706_184954.jpg",
       "fileName": "IMG_20230706_184954.jpg",
       "size": 388612
     },
     "/drive_images/gallery_new/IMG_20230706_184954_1.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_184954_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_184954_1",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772555/diaza_studio/drive_images/gallery_new/IMG_20230706_184954_1.jpg",
       "fileName": "IMG_20230706_184954_1.jpg",
       "size": 388393
     },
     "/drive_images/gallery_new/IMG_20230706_185216-01.jpeg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_185216-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_185216-01",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772556/diaza_studio/drive_images/gallery_new/IMG_20230706_185216-01.jpg",
       "fileName": "IMG_20230706_185216-01.jpeg",
       "size": 642043
     },
     "/drive_images/gallery_new/IMG_20230706_185216.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_185216",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_185216",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772557/diaza_studio/drive_images/gallery_new/IMG_20230706_185216.jpg",
       "fileName": "IMG_20230706_185216.jpg",
       "size": 438737
     },
     "/drive_images/gallery_new/IMG_20230706_185216_1.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_185216_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_185216_1",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772557/diaza_studio/drive_images/gallery_new/IMG_20230706_185216_1.jpg",
       "fileName": "IMG_20230706_185216_1.jpg",
       "size": 432332
     },
     "/drive_images/gallery_new/IMG_20230706_185734.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_185734",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_185734",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772558/diaza_studio/drive_images/gallery_new/IMG_20230706_185734.jpg",
       "fileName": "IMG_20230706_185734.jpg",
       "size": 371302
     },
     "/drive_images/gallery_new/IMG_20230706_185805.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_185805",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_185805",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772559/diaza_studio/drive_images/gallery_new/IMG_20230706_185805.jpg",
       "fileName": "IMG_20230706_185805.jpg",
       "size": 376912
     },
     "/drive_images/gallery_new/IMG_20230706_190138.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_190138",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_190138",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772559/diaza_studio/drive_images/gallery_new/IMG_20230706_190138.jpg",
       "fileName": "IMG_20230706_190138.jpg",
       "size": 292616
     },
     "/drive_images/gallery_new/IMG_20230706_190309.jpg": {
       "publicId": "diaza_studio/drive_images/gallery_new/IMG_20230706_190309",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/gallery_new/IMG_20230706_190309",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772560/diaza_studio/drive_images/gallery_new/IMG_20230706_190309.jpg",
       "fileName": "IMG_20230706_190309.jpg",
       "size": 241654
     },
     "/drive_images/project_2/2.jpg": {
       "publicId": "diaza_studio/drive_images/project_2/2",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2/2",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772561/diaza_studio/drive_images/project_2/2.jpg",
       "fileName": "2.jpg",
       "size": 2824233
     },
     "/drive_images/project_2/3b.jpg": {
       "publicId": "diaza_studio/drive_images/project_2/3b",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2/3b",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772562/diaza_studio/drive_images/project_2/3b.jpg",
       "fileName": "3b.jpg",
       "size": 4146520
     },
     "/drive_images/project_2/4.jpg": {
       "publicId": "diaza_studio/drive_images/project_2/4",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2/4",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772562/diaza_studio/drive_images/project_2/4.jpg",
       "fileName": "4.jpg",
       "size": 1933435
     },
     "/drive_images/project_2/4a.jpg": {
       "publicId": "diaza_studio/drive_images/project_2/4a",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2/4a",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772563/diaza_studio/drive_images/project_2/4a.jpg",
       "fileName": "4a.jpg",
       "size": 4695945
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/1.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772565/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1.jpg",
       "fileName": "1.jpg",
       "size": 3161077
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/1a.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1a",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1a",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772565/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1a.jpg",
       "fileName": "1a.jpg",
       "size": 2731186
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/1b.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1b",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1b",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772567/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1b.jpg",
       "fileName": "1b.jpg",
       "size": 4641100
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/1c.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1c",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1c",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772568/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1c.jpg",
       "fileName": "1c.jpg",
       "size": 6018101
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/1d.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1d",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1d",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772569/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/1d.jpg",
       "fileName": "1d.jpg",
       "size": 4640501
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/2.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772570/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2.jpg",
       "fileName": "2.jpg",
       "size": 2824233
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/2a.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2a",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2a",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772571/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2a.jpg",
       "fileName": "2a.jpg",
       "size": 4384722
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/2b.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2b",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2b",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772572/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/2b.jpg",
       "fileName": "2b.jpg",
       "size": 6130720
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/3.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772573/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3.jpg",
       "fileName": "3.jpg",
       "size": 2043219
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/3a.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3a",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3a",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772574/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3a.jpg",
       "fileName": "3a.jpg",
       "size": 5259819
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/3b.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3b",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3b",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772575/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/3b.jpg",
       "fileName": "3b.jpg",
       "size": 4146520
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/4.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772576/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4.jpg",
       "fileName": "4.jpg",
       "size": 1933435
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/4a.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4a",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4a",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772577/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4a.jpg",
       "fileName": "4a.jpg",
       "size": 4695945
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/4b.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4b",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4b",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772578/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/4b.jpg",
       "fileName": "4b.jpg",
       "size": 3900456
     },
     "/drive_images/project_2_raw/Before after photos/Kitchen Before after/Copy of DSC05094-HDR.jpg": {
       "publicId": "diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/Copy_of_DSC05094-HDR",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/Copy_of_DSC05094-HDR",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772579/diaza_studio/drive_images/project_2_raw/Before_after_photos/Kitchen_Before_after/Copy_of_DSC05094-HDR.jpg",
       "fileName": "Copy of DSC05094-HDR.jpg",
       "size": 5794708
     },
     "/drive_images/project_3_drive/DSC03416.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03416",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03416",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772580/diaza_studio/drive_images/project_3_drive/DSC03416.jpg",
       "fileName": "DSC03416.jpg",
       "size": 276103
     },
     "/drive_images/project_3_drive/DSC03427.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03427",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03427",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772581/diaza_studio/drive_images/project_3_drive/DSC03427.jpg",
       "fileName": "DSC03427.jpg",
       "size": 301072
     },
     "/drive_images/project_3_drive/DSC03430.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03430",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03430",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772581/diaza_studio/drive_images/project_3_drive/DSC03430.jpg",
       "fileName": "DSC03430.jpg",
       "size": 295230
     },
     "/drive_images/project_3_drive/DSC03466.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03466",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03466",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772582/diaza_studio/drive_images/project_3_drive/DSC03466.jpg",
       "fileName": "DSC03466.jpg",
       "size": 286106
     },
     "/drive_images/project_3_drive/DSC03484.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03484",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03484",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772583/diaza_studio/drive_images/project_3_drive/DSC03484.jpg",
       "fileName": "DSC03484.jpg",
       "size": 424794
     },
     "/drive_images/project_3_drive/DSC03498.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03498",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03498",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772583/diaza_studio/drive_images/project_3_drive/DSC03498.jpg",
       "fileName": "DSC03498.jpg",
       "size": 342606
     },
     "/drive_images/project_3_drive/DSC03519.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03519",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03519",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772584/diaza_studio/drive_images/project_3_drive/DSC03519.jpg",
       "fileName": "DSC03519.jpg",
       "size": 337524
     },
     "/drive_images/project_3_drive/DSC03525.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03525",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03525",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772584/diaza_studio/drive_images/project_3_drive/DSC03525.jpg",
       "fileName": "DSC03525.jpg",
       "size": 240196
     },
     "/drive_images/project_3_drive/DSC03540.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03540",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03540",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772585/diaza_studio/drive_images/project_3_drive/DSC03540.jpg",
       "fileName": "DSC03540.jpg",
       "size": 235538
     },
     "/drive_images/project_3_drive/DSC03561.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03561",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03561",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772586/diaza_studio/drive_images/project_3_drive/DSC03561.jpg",
       "fileName": "DSC03561.jpg",
       "size": 349039
     },
     "/drive_images/project_3_drive/DSC03574.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03574",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03574",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772586/diaza_studio/drive_images/project_3_drive/DSC03574.jpg",
       "fileName": "DSC03574.jpg",
       "size": 368308
     },
     "/drive_images/project_3_drive/DSC03605.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03605",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03605",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772587/diaza_studio/drive_images/project_3_drive/DSC03605.jpg",
       "fileName": "DSC03605.jpg",
       "size": 175753
     },
     "/drive_images/project_3_drive/DSC03609.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03609",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03609",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772588/diaza_studio/drive_images/project_3_drive/DSC03609.jpg",
       "fileName": "DSC03609.jpg",
       "size": 133518
     },
     "/drive_images/project_3_drive/DSC03620.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03620",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03620",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772588/diaza_studio/drive_images/project_3_drive/DSC03620.jpg",
       "fileName": "DSC03620.jpg",
       "size": 262989
     },
     "/drive_images/project_3_drive/DSC03624.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03624",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03624",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772589/diaza_studio/drive_images/project_3_drive/DSC03624.jpg",
       "fileName": "DSC03624.jpg",
       "size": 245028
     },
     "/drive_images/project_3_drive/DSC03629.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03629",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03629",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772589/diaza_studio/drive_images/project_3_drive/DSC03629.jpg",
       "fileName": "DSC03629.jpg",
       "size": 214390
     },
     "/drive_images/project_3_drive/DSC03636.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03636",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03636",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772590/diaza_studio/drive_images/project_3_drive/DSC03636.jpg",
       "fileName": "DSC03636.jpg",
       "size": 280671
     },
     "/drive_images/project_3_drive/DSC03642.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03642",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03642",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772591/diaza_studio/drive_images/project_3_drive/DSC03642.jpg",
       "fileName": "DSC03642.jpg",
       "size": 217506
     },
     "/drive_images/project_3_drive/DSC03711.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03711",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03711",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772591/diaza_studio/drive_images/project_3_drive/DSC03711.jpg",
       "fileName": "DSC03711.jpg",
       "size": 236739
     },
     "/drive_images/project_3_drive/DSC03723.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03723",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03723",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772592/diaza_studio/drive_images/project_3_drive/DSC03723.jpg",
       "fileName": "DSC03723.jpg",
       "size": 131826
     },
     "/drive_images/project_3_drive/DSC03730.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03730",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03730",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772593/diaza_studio/drive_images/project_3_drive/DSC03730.jpg",
       "fileName": "DSC03730.jpg",
       "size": 242354
     },
     "/drive_images/project_3_drive/DSC03733.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03733",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03733",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772594/diaza_studio/drive_images/project_3_drive/DSC03733.jpg",
       "fileName": "DSC03733.jpg",
       "size": 272628
     },
     "/drive_images/project_3_drive/DSC03736.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03736",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03736",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772594/diaza_studio/drive_images/project_3_drive/DSC03736.jpg",
       "fileName": "DSC03736.jpg",
       "size": 263542
     },
     "/drive_images/project_3_drive/DSC03741.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03741",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03741",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772595/diaza_studio/drive_images/project_3_drive/DSC03741.jpg",
       "fileName": "DSC03741.jpg",
       "size": 359728
     },
     "/drive_images/project_3_drive/DSC03747.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03747",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03747",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772596/diaza_studio/drive_images/project_3_drive/DSC03747.jpg",
       "fileName": "DSC03747.jpg",
       "size": 312393
     },
     "/drive_images/project_3_drive/DSC03762.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03762",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03762",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772596/diaza_studio/drive_images/project_3_drive/DSC03762.jpg",
       "fileName": "DSC03762.jpg",
       "size": 235656
     },
     "/drive_images/project_3_drive/DSC03777.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03777",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03777",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772597/diaza_studio/drive_images/project_3_drive/DSC03777.jpg",
       "fileName": "DSC03777.jpg",
       "size": 209960
     },
     "/drive_images/project_3_drive/DSC03783.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03783",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03783",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772598/diaza_studio/drive_images/project_3_drive/DSC03783.jpg",
       "fileName": "DSC03783.jpg",
       "size": 218371
     },
     "/drive_images/project_3_drive/DSC03786.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03786",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03786",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772598/diaza_studio/drive_images/project_3_drive/DSC03786.jpg",
       "fileName": "DSC03786.jpg",
       "size": 327471
     },
     "/drive_images/project_3_drive/DSC03819.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03819",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03819",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772599/diaza_studio/drive_images/project_3_drive/DSC03819.jpg",
       "fileName": "DSC03819.jpg",
       "size": 341379
     },
     "/drive_images/project_3_drive/DSC03827.jpg": {
       "publicId": "diaza_studio/drive_images/project_3_drive/DSC03827",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_3_drive/DSC03827",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772600/diaza_studio/drive_images/project_3_drive/DSC03827.jpg",
       "fileName": "DSC03827.jpg",
       "size": 284692
     },
     "/drive_images/project_photos/gphotos_10.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_10",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_10",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772600/diaza_studio/drive_images/project_photos/gphotos_10.jpg",
       "fileName": "gphotos_10.jpg",
       "size": 37941
     },
     "/drive_images/project_photos/gphotos_11.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_11",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_11",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772601/diaza_studio/drive_images/project_photos/gphotos_11.jpg",
       "fileName": "gphotos_11.jpg",
       "size": 64919
     },
     "/drive_images/project_photos/gphotos_12.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_12",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_12",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772601/diaza_studio/drive_images/project_photos/gphotos_12.jpg",
       "fileName": "gphotos_12.jpg",
       "size": 31173
     },
     "/drive_images/project_photos/gphotos_15.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_15",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_15",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772602/diaza_studio/drive_images/project_photos/gphotos_15.jpg",
       "fileName": "gphotos_15.jpg",
       "size": 50734
     },
     "/drive_images/project_photos/gphotos_16.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_16",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_16",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772603/diaza_studio/drive_images/project_photos/gphotos_16.jpg",
       "fileName": "gphotos_16.jpg",
       "size": 90753
     },
     "/drive_images/project_photos/gphotos_17.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_17",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_17",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772604/diaza_studio/drive_images/project_photos/gphotos_17.jpg",
       "fileName": "gphotos_17.jpg",
       "size": 51134
     },
     "/drive_images/project_photos/gphotos_19.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_19",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_19",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772604/diaza_studio/drive_images/project_photos/gphotos_19.jpg",
       "fileName": "gphotos_19.jpg",
       "size": 36663
     },
     "/drive_images/project_photos/gphotos_2.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_2",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_2",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772605/diaza_studio/drive_images/project_photos/gphotos_2.jpg",
       "fileName": "gphotos_2.jpg",
       "size": 127017
     },
     "/drive_images/project_photos/gphotos_27.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_27",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_27",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772606/diaza_studio/drive_images/project_photos/gphotos_27.jpg",
       "fileName": "gphotos_27.jpg",
       "size": 57821
     },
     "/drive_images/project_photos/gphotos_30.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_30",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_30",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772606/diaza_studio/drive_images/project_photos/gphotos_30.jpg",
       "fileName": "gphotos_30.jpg",
       "size": 62940
     },
     "/drive_images/project_photos/gphotos_31.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_31",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_31",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772607/diaza_studio/drive_images/project_photos/gphotos_31.jpg",
       "fileName": "gphotos_31.jpg",
       "size": 64851
     },
     "/drive_images/project_photos/gphotos_32.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_32",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_32",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772608/diaza_studio/drive_images/project_photos/gphotos_32.jpg",
       "fileName": "gphotos_32.jpg",
       "size": 182059
     },
     "/drive_images/project_photos/gphotos_33.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_33",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_33",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772608/diaza_studio/drive_images/project_photos/gphotos_33.jpg",
       "fileName": "gphotos_33.jpg",
       "size": 79002
     },
     "/drive_images/project_photos/gphotos_36.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_36",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_36",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772609/diaza_studio/drive_images/project_photos/gphotos_36.jpg",
       "fileName": "gphotos_36.jpg",
       "size": 39937
     },
     "/drive_images/project_photos/gphotos_38.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_38",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_38",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772610/diaza_studio/drive_images/project_photos/gphotos_38.jpg",
       "fileName": "gphotos_38.jpg",
       "size": 41217
     },
     "/drive_images/project_photos/gphotos_4.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_4",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_4",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772610/diaza_studio/drive_images/project_photos/gphotos_4.jpg",
       "fileName": "gphotos_4.jpg",
       "size": 39336
     },
     "/drive_images/project_photos/gphotos_41.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_41",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_41",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772611/diaza_studio/drive_images/project_photos/gphotos_41.jpg",
       "fileName": "gphotos_41.jpg",
       "size": 60412
     },
     "/drive_images/project_photos/gphotos_43.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_43",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_43",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772612/diaza_studio/drive_images/project_photos/gphotos_43.jpg",
       "fileName": "gphotos_43.jpg",
       "size": 66440
     },
     "/drive_images/project_photos/gphotos_45.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_45",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_45",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772612/diaza_studio/drive_images/project_photos/gphotos_45.jpg",
       "fileName": "gphotos_45.jpg",
       "size": 37716
     },
     "/drive_images/project_photos/gphotos_46.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_46",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_46",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772613/diaza_studio/drive_images/project_photos/gphotos_46.jpg",
       "fileName": "gphotos_46.jpg",
       "size": 40866
     },
     "/drive_images/project_photos/gphotos_47.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_47",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_47",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772614/diaza_studio/drive_images/project_photos/gphotos_47.jpg",
       "fileName": "gphotos_47.jpg",
       "size": 92776
     },
     "/drive_images/project_photos/gphotos_49.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_49",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_49",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772614/diaza_studio/drive_images/project_photos/gphotos_49.jpg",
       "fileName": "gphotos_49.jpg",
       "size": 86542
     },
     "/drive_images/project_photos/gphotos_50.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_50",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_50",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772615/diaza_studio/drive_images/project_photos/gphotos_50.jpg",
       "fileName": "gphotos_50.jpg",
       "size": 131402
     },
     "/drive_images/project_photos/gphotos_52.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_52",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_52",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772616/diaza_studio/drive_images/project_photos/gphotos_52.jpg",
       "fileName": "gphotos_52.jpg",
       "size": 84415
     },
     "/drive_images/project_photos/gphotos_53.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_53",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_53",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772616/diaza_studio/drive_images/project_photos/gphotos_53.jpg",
       "fileName": "gphotos_53.jpg",
       "size": 139211
     },
     "/drive_images/project_photos/gphotos_6.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_6",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_6",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772617/diaza_studio/drive_images/project_photos/gphotos_6.jpg",
       "fileName": "gphotos_6.jpg",
       "size": 121904
     },
     "/drive_images/project_photos/gphotos_7.jpg": {
       "publicId": "diaza_studio/drive_images/project_photos/gphotos_7",
-      "cloudinaryUrl": "https://res.cloudinary.com/diaza-studio/image/upload/f_auto,q_auto/diaza_studio/drive_images/project_photos/gphotos_7",
+      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790772617/diaza_studio/drive_images/project_photos/gphotos_7.jpg",
       "fileName": "gphotos_7.jpg",
       "size": 50167
     }

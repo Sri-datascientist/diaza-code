@@ -1,3 +1,5 @@
+import { getCloudinaryUrl } from "./cloudinary";
+
 export interface DriveImageData {
   id: string;
   name: string;
@@ -88,65 +90,80 @@ const GALLERY_FILES = [
   "IMG_20230217_164442-01.jpeg"
 ];
 
-const p3DriveImages: DriveImageData[] = PROJECT_3_DRIVE_FILES.map((fileName, idx) => ({
-  id: `p3-drive-${idx + 1}`,
-  name: `Featured Project Interior ${idx + 1}`,
-  s3_url: `/drive_images/project_3_drive/${encodeURIComponent(fileName)}`,
-  s3_key: `project_3_drive/${fileName}`,
-  fileName: fileName,
-  fileType: "image/jpeg",
-  size: 0,
-  project: "Featured Project",
-  roomType: "Luxury Interior"
-}));
+const p3DriveImages: DriveImageData[] = PROJECT_3_DRIVE_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/project_3_drive/${encodeURIComponent(fileName)}`;
+  return {
+    id: `p3-drive-${idx + 1}`,
+    name: `Featured Project Interior ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `project_3_drive/${fileName}`,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Featured Project",
+    roomType: "Luxury Interior"
+  };
+});
 
-const pGphotosImages: DriveImageData[] = PROJECT_GPHOTOS_FILES.map((fileName, idx) => ({
-  id: `p-gphotos-${idx + 1}`,
-  name: `Project Showcase ${idx + 1}`,
-  s3_url: `/drive_images/project_photos/${encodeURIComponent(fileName)}`,
-  s3_key: `project_photos/${fileName}`,
-  fileName: fileName,
-  fileType: "image/jpeg",
-  size: 0,
-  project: "Project Showcase",
-  roomType: "Interior Design"
-}));
+const pGphotosImages: DriveImageData[] = PROJECT_GPHOTOS_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/project_photos/${encodeURIComponent(fileName)}`;
+  return {
+    id: `p-gphotos-${idx + 1}`,
+    name: `Project Showcase ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `project_photos/${fileName}`,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Project Showcase",
+    roomType: "Interior Design"
+  };
+});
 
-const p2Images: DriveImageData[] = PROJECT_2_FILES.map((fileName, idx) => ({
-  id: `p2-img-${idx + 1}`,
-  name: `Kitchen & House Interior ${idx + 1}`,
-  s3_url: `/drive_images/project_2/${encodeURIComponent(fileName)}`,
-  s3_key: `project_2/${fileName}`,
-  fileName: fileName,
-  fileType: "image/jpeg",
-  size: 0,
-  project: "House Interior Project",
-  roomType: "Kitchen & Living"
-}));
+const p2Images: DriveImageData[] = PROJECT_2_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/project_2/${encodeURIComponent(fileName)}`;
+  return {
+    id: `p2-img-${idx + 1}`,
+    name: `Kitchen & House Interior ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `project_2/${fileName}`,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "House Interior Project",
+    roomType: "Kitchen & Living"
+  };
+});
 
-const newGalleryImages: DriveImageData[] = NEW_GALLERY_FILES.map((fileName, idx) => ({
-  id: `new-gal-img-${idx + 1}`,
-  name: `Gallery Portfolio ${idx + 1}`,
-  s3_url: `/drive_images/gallery_new/${encodeURIComponent(fileName)}`,
-  s3_key: `gallery_new/${fileName}`,
-  fileName: fileName,
-  fileType: "image/jpeg",
-  size: 0,
-  project: "Gallery Collection",
-  roomType: "Interior"
-}));
+const newGalleryImages: DriveImageData[] = NEW_GALLERY_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/gallery_new/${encodeURIComponent(fileName)}`;
+  return {
+    id: `new-gal-img-${idx + 1}`,
+    name: `Gallery Portfolio ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `gallery_new/${fileName}`,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Gallery Collection",
+    roomType: "Interior"
+  };
+});
 
-const galleryImages: DriveImageData[] = GALLERY_FILES.map((fileName, idx) => ({
-  id: `drive-img-${idx + 1}`,
-  name: fileName.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " "),
-  s3_url: `/drive_images/gallery/${encodeURIComponent(fileName)}`,
-  s3_key: `gallery/${fileName}`,
-  fileName: fileName,
-  fileType: "image/jpeg",
-  size: 0,
-  project: "Gallery",
-  roomType: "Interior"
-}));
+const galleryImages: DriveImageData[] = GALLERY_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/gallery/${encodeURIComponent(fileName)}`;
+  return {
+    id: `drive-img-${idx + 1}`,
+    name: fileName.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " "),
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `gallery/${fileName}`,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Gallery",
+    roomType: "Interior"
+  };
+});
 
 export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
   ...p3DriveImages,
@@ -155,3 +172,4 @@ export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
   ...newGalleryImages,
   ...galleryImages
 ];
+

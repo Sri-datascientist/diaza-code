@@ -30,3 +30,7 @@ backend/lambda-env-clean.json
 *.sw?
 .DS_Store
 Thumbs.db
+
+# Heavy drive image assets (served via Cloudinary)
+frontend/public/drive_images/
+

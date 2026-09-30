@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
 import { AutoCarousel } from "@/components/AutoCarousel";
+import { getCloudinaryUrl } from "@/lib/cloudinary";
 import heroImage1 from "@assets/stock_images/compact_guest_bedroom.png";
 import heroImage2 from "@assets/stock_images/informal_living_room.png";
 import heroImage3 from "@assets/stock_images/cinematic_bedroom.png";
@@ -37,9 +38,11 @@ export default function Home() {
               }`}
             >
               <img 
-                src={image}
+                src={getCloudinaryUrl(image, { width: 1920 })}
                 alt={`Luxury interior design ${index + 1}`}
                 className="w-full h-full object-cover"
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "low"}
               />
               <div className="absolute inset-0 bg-[rgba(61,61,61,0.5)]" />
             </div>

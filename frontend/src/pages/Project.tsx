@@ -4,6 +4,7 @@ import luxuryLivingRoom from "@assets/stock_images/modern_luxury_interi_d54f89a0
 import { DecorativeDivider1, DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
 import type { S3ImageResponse } from "@shared/schema";
 import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
+import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
 
 export default function Project() {
   const [scrollY, setScrollY] = useState(0);
@@ -32,9 +33,11 @@ export default function Project() {
       >
         <div className="absolute inset-0 z-0">
           <img 
-            src={luxuryLivingRoom} 
+            src={getCloudinaryUrl(luxuryLivingRoom, { width: 1920 })} 
             alt="Interior design background" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
             style={{
               transform: `translateY(${scrollY * 0.5}px)`,
               transition: 'transform 0.1s ease-out',
@@ -138,27 +141,37 @@ export default function Project() {
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
               data-testid="project-gallery"
             >
-              {imagesToDisplay.map((image, index) => (
-                <div
-                  key={image.id}
-                  className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 animate-fade-up bg-white"
-                  style={{ 
-                    animationDelay: `${index * 0.05}s`,
-                    opacity: 0,
-                    animation: `fade-up 0.8s ${index * 0.05}s ease forwards`
-                  }}
-                  data-testid={`project-image-${index}`}
-                >
-                  {/* Image Container */}
-                  <div className="aspect-[4/3] overflow-hidden bg-[#D4C4B0]/20">
-                    <img
-                      src={image.s3_url || ''}
-                      alt={image.name || `Project ${index + 1}`}
-                      className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-700 ease-out"
-                    />
+              {imagesToDisplay.map((image, index) => {
+                const rawSrc = image.s3_url || '';
+                const imgSrc = getCloudinaryUrl(rawSrc, { width: 800 });
+                const srcSet = getCloudinarySrcSet(rawSrc, [400, 800, 1200]);
+
+                return (
+                  <div
+                    key={image.id}
+                    className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 animate-fade-up bg-white"
+                    style={{ 
+                      animationDelay: `${Math.min(index * 0.05, 1)}s`,
+                      opacity: 0,
+                      animation: `fade-up 0.8s ${Math.min(index * 0.05, 1)}s ease forwards`
+                    }}
+                    data-testid={`project-image-${index}`}
+                  >
+                    {/* Image Container */}
+                    <div className="aspect-[4/3] overflow-hidden bg-[#D4C4B0]/20">
+                      <img
+                        src={imgSrc}
+                        srcSet={srcSet || undefined}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        alt={image.name || `Project ${index + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-700 ease-out"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
@@ -177,3 +190,4 @@ export default function Project() {
     </div>
   );
 }
+

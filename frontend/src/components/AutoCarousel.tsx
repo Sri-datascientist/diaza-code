@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { S3ImageResponse } from "@shared/schema";
 import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
+import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
 
 interface AutoCarouselProps {
   folderPath?: string;
@@ -87,20 +88,28 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
             }}
             data-testid="first-row-track"
           >
-            {firstRowImages.map((image, index) => (
-              <div 
-                key={`first-${image.id}-${index}`} 
-                className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                data-testid={`first-row-image-${index}`}
-              >
-                <img
-                  src={image.s3_url || ''}
-                  alt={image.name || `Portfolio image ${index + 1}`}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+            {firstRowImages.map((image, index) => {
+              const rawSrc = image.s3_url || '';
+              const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
+              const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
+              return (
+                <div 
+                  key={`first-${image.id}-${index}`} 
+                  className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  data-testid={`first-row-image-${index}`}
+                >
+                  <img
+                    src={imgSrc}
+                    srcSet={srcSet || undefined}
+                    sizes="(max-width: 640px) 300px, (max-width: 1024px) 350px, 400px"
+                    alt={image.name || `Portfolio image ${index + 1}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -114,20 +123,28 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
             }}
             data-testid="second-row-track"
           >
-            {secondRowImages.map((image, index) => (
-              <div 
-                key={`second-${image.id}-${index}`} 
-                className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                data-testid={`second-row-image-${index}`}
-              >
-                <img
-                  src={image.s3_url || ''}
-                  alt={image.name || `Portfolio image ${index + 1}`}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+            {secondRowImages.map((image, index) => {
+              const rawSrc = image.s3_url || '';
+              const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
+              const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
+              return (
+                <div 
+                  key={`second-${image.id}-${index}`} 
+                  className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  data-testid={`second-row-image-${index}`}
+                >
+                  <img
+                    src={imgSrc}
+                    srcSet={srcSet || undefined}
+                    sizes="(max-width: 640px) 300px, (max-width: 1024px) 350px, 400px"
+                    alt={image.name || `Portfolio image ${index + 1}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -164,20 +181,28 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
         }}
         data-testid="carousel-track"
       >
-        {duplicatedImages.map((image, index) => (
-          <div 
-            key={`${image.id}-${index}`} 
-            className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
-            data-testid={`carousel-image-${index}`}
-          >
-            <img
-              src={image.s3_url || ''}
-              alt={image.name || `Portfolio image ${index + 1}`}
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        ))}
+        {duplicatedImages.map((image, index) => {
+          const rawSrc = image.s3_url || '';
+          const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
+          const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
+          return (
+            <div 
+              key={`${image.id}-${index}`} 
+              className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              data-testid={`carousel-image-${index}`}
+            >
+              <img
+                src={imgSrc}
+                srcSet={srcSet || undefined}
+                sizes="(max-width: 640px) 300px, (max-width: 1024px) 350px, 400px"
+                alt={image.name || `Portfolio image ${index + 1}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          );
+        })}
       </div>
 
       <style>{`
@@ -193,3 +218,4 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
     </div>
   );
 }
+

@@ -66,7 +66,6 @@ const GALLERY_FILES = [
   "DSC03315-01.jpeg",
   "DSC03320-01.jpeg",
   "DSC03323-01.jpeg",
-  "DSC03356.JPG",
   "DSC03361-01.jpeg",
   "DSC03370-01.jpeg",
   "DSC03394-01.jpeg",
@@ -75,9 +74,6 @@ const GALLERY_FILES = [
   "DSC03415-01.jpeg",
   "DSC03424-01.jpeg",
   "DSC03429 (2)-01.jpeg",
-  "DSC03460.JPG",
-  "DSC03470.JPG",
-  "DSC03473.JPG",
   "DSC03500-01-01.jpeg",
   "DSC03507-01.jpeg",
   "DSC03511-01.jpeg",
@@ -87,7 +83,6 @@ const GALLERY_FILES = [
   "DSC03548-01.jpeg",
   "DSC03578-01.jpeg",
   "DSC03592-01.jpeg",
-  "DSC03592.JPG",
   "IMG_20230217_164442-01.jpeg"
 ];
 

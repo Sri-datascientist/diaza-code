@@ -1,28 +1,10 @@
-import { useQuery } from "@tanstack/react-query";
-import { useState, useEffect } from "react";
 import luxuryLivingRoom from "@assets/stock_images/modern_luxury_interi_d54f89a0.jpg";
 import { DecorativeDivider1, DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
-import type { S3ImageResponse } from "@shared/schema";
 import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
 import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
 
 export default function Project() {
-  const [scrollY, setScrollY] = useState(0);
-
-  const { data, isLoading } = useQuery<S3ImageResponse>({
-    queryKey: ['/api/public/s3/images', 'beula/'],
-  });
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const imagesToDisplay = (data?.images && data.images.length > 0) ? data.images : LOCAL_DRIVE_IMAGES;
+  const imagesToDisplay = LOCAL_DRIVE_IMAGES;
   const imageCount = imagesToDisplay.length;
 
   return (
@@ -119,13 +101,7 @@ export default function Project() {
         }} />
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
-          {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-pulse">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="w-full h-[350px] bg-[#D4C4B0]/30 rounded-xl" />
-              ))}
-            </div>
-          ) : imagesToDisplay.length === 0 ? (
+          {imagesToDisplay.length === 0 ? (
             <div className="text-center py-20">
               <div className="inline-block p-8 bg-white rounded-2xl shadow-lg">
                 <p 

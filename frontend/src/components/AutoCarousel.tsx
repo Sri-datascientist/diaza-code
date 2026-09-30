@@ -1,27 +1,20 @@
 import { useEffect, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { S3ImageResponse } from "@shared/schema";
 import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
 import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
 
 interface AutoCarouselProps {
-  folderPath?: string;
   speed?: number;
   className?: string;
   showTwoRows?: boolean;
 }
 
-export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRows = false }: AutoCarouselProps) {
-  const { data, isLoading } = useQuery<S3ImageResponse>({
-    queryKey: ['/api/public/s3/images', folderPath],
-  });
-
+export function AutoCarousel({ speed = 30, className = "", showTwoRows = false }: AutoCarouselProps) {
   const [duplicatedImages, setDuplicatedImages] = useState<any[]>([]);
   const [firstRowImages, setFirstRowImages] = useState<any[]>([]);
   const [secondRowImages, setSecondRowImages] = useState<any[]>([]);
 
   useEffect(() => {
-    const images = (data?.images && data.images.length > 0) ? data.images : LOCAL_DRIVE_IMAGES;
+    const images = LOCAL_DRIVE_IMAGES;
     if (images && images.length > 0) {
       if (showTwoRows) {
         // First row: top-to-bottom sequence (original order)
@@ -37,36 +30,11 @@ export function AutoCarousel({ folderPath, speed = 30, className = "", showTwoRo
         setDuplicatedImages([...images, ...images, ...images]);
       }
     }
-  }, [data, showTwoRows]);
+  }, [showTwoRows]);
 
-  if (isLoading) {
-    return (
-      <div className={`relative overflow-hidden ${className}`}>
-        {showTwoRows ? (
-          <div className="space-y-4">
-            <div className="flex gap-4 animate-pulse">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="flex-shrink-0 w-[300px] h-[200px] bg-[#D4C4B0] rounded-lg" />
-              ))}
-            </div>
-            <div className="flex gap-4 animate-pulse">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="flex-shrink-0 w-[300px] h-[200px] bg-[#D4C4B0] rounded-lg" />
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="flex gap-4 animate-pulse">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="flex-shrink-0 w-[300px] h-[200px] bg-[#D4C4B0] rounded-lg" />
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
+  // Pure Cloudinary static loading - render directly without S3 loading wait
 
-  const activeImages = (data?.images && data.images.length > 0) ? data.images : LOCAL_DRIVE_IMAGES;
+  const activeImages = LOCAL_DRIVE_IMAGES;
   if (!activeImages || activeImages.length === 0) {
     return (
       <div className={`text-center py-8 ${className}`}>

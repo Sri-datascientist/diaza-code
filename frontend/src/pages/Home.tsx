@@ -104,7 +104,6 @@ export default function Home() {
 
         {/* Dual Row Carousel - Opposite Directions and Sequences */}
         <AutoCarousel 
-          folderPath="beula/"
           className="mb-8"
           speed={400}
           showTwoRows={true}

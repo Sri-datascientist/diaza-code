@@ -13,59 +13,142 @@ export interface DriveImageData {
   roomType: string;
 }
 
-// Project 3 Drive Photos (Horizontal & Vertical edited collections)
-const PROJECT_3_DRIVE_FILES = [
-  "DSC03416.jpg", "DSC03427.jpg", "DSC03430.jpg", "DSC03574.jpg", "DSC03620.jpg", "DSC03624.jpg", "DSC03629.jpg",
-  "DSC03466.jpg", "DSC03484.jpg", "DSC03498.jpg", "DSC03519.jpg", "DSC03525.jpg", "DSC03540.jpg", "DSC03561.jpg",
-  "DSC03605.jpg", "DSC03609.jpg", "DSC03636.jpg", "DSC03642.jpg", "DSC03711.jpg", "DSC03723.jpg", "DSC03730.jpg",
-  "DSC03733.jpg", "DSC03736.jpg", "DSC03741.jpg", "DSC03747.jpg", "DSC03762.jpg", "DSC03777.jpg", "DSC03783.jpg",
-  "DSC03786.jpg", "DSC03819.jpg", "DSC03827.jpg"
+// Tusar Diaza Project Photos
+const TUSAR_DIAZA_FILES = [
+  "DSC04885-HDR.jpg",
+  "DSC04891-HDR.jpg",
+  "DSC04894-HDR.jpg",
+  "DSC04903-HDR.jpg",
+  "DSC04906-HDR.jpg",
+  "DSC04909-HDR.jpg",
+  "DSC04915-HDR.jpg",
+  "DSC04918-HDR.jpg",
+  "DSC04921-HDR.jpg",
+  "DSC04924-HDR.jpg",
+  "DSC04930-HDR.jpg",
+  "DSC04933.jpg",
+  "DSC04936.jpg",
+  "DSC04937.jpg",
+  "DSC04938.jpg",
+  "DSC04939.jpg",
+  "DSC04940.jpg",
+  "DSC04941.jpg",
+  "DSC04942.jpg",
+  "DSC04943.jpg",
+  "DSC04944.jpg",
+  "DSC04945.jpg",
+  "DSC04946.jpg",
+  "DSC04947.jpg",
+  "DSC04948.jpg",
+  "DSC04949.jpg",
+  "DSC04950-HDR.jpg",
+  "DSC04956-HDR.jpg",
+  "DSC04959-HDR.jpg",
+  "DSC04962-HDR.jpg",
+  "DSC04965-HDR.jpg",
+  "DSC04968-HDR.jpg",
+  "DSC04971-HDR.jpg",
+  "DSC04974-HDR.jpg",
+  "DSC04977-HDR.jpg",
+  "DSC04980-HDR.jpg",
+  "DSC04983-HDR.jpg",
+  "DSC04986-HDR.jpg",
+  "DSC04989-HDR.jpg",
+  "DSC04992-HDR.jpg",
+  "DSC04995-HDR.jpg",
+  "DSC04998-HDR.jpg",
+  "DSC05001-HDR.jpg",
+  "DSC05004-HDR.jpg",
+  "DSC05007-HDR.jpg",
+  "DSC05010-HDR.jpg",
+  "DSC05013-HDR.jpg",
+  "DSC05016-HDR.jpg",
+  "DSC05019-HDR.jpg",
+  "DSC05022-HDR.jpg",
+  "DSC05025-HDR.jpg",
+  "DSC05028-HDR.jpg",
+  "DSC05031-HDR.jpg",
+  "DSC05034-HDR.jpg",
+  "DSC05037-HDR.jpg",
+  "DSC05040-HDR.jpg",
+  "DSC05046-HDR.jpg",
+  "DSC05049-HDR.jpg",
+  "DSC05055-HDR.jpg",
+  "DSC05058-HDR.jpg",
+  "DSC05061-HDR.jpg",
+  "DSC05064-HDR.jpg",
+  "DSC05067-HDR.jpg",
+  "DSC05070-HDR.jpg",
+  "DSC05073-HDR.jpg",
+  "DSC05076-HDR.jpg",
+  "DSC05079-HDR.jpg",
+  "DSC05082-HDR.jpg",
+  "DSC05085-HDR.jpg",
+  "DSC05088-HDR.jpg",
+  "DSC05091-HDR.jpg",
+  "DSC05094-HDR.jpg",
+  "DSC05097-HDR.jpg",
+  "DSC05100-HDR.jpg",
+  "DSC05103-HDR.jpg",
+  "DSC05106-HDR.jpg",
+  "DSC05109-HDR.jpg",
+  "DSC05112-HDR.jpg",
+  "DSC05118-HDR.jpg",
+  "DSC05121-HDR.jpg",
+  "DSC05124-HDR.jpg",
+  "DSC05127-HDR.jpg",
+  "DSC05130-HDR.jpg",
+  "DSC05133-HDR.jpg",
+  "DSC05136-HDR.jpg",
+  "DSC05139-HDR.jpg",
+  "DSC05142-HDR.jpg",
+  "DSC05145-HDR.jpg",
+  "DSC05148-HDR.jpg",
+  "DSC05151-HDR.jpg",
+  "DSC05154-HDR.jpg",
+  "DSC05157-HDR.jpg",
+  "DSC05160-HDR.jpg",
+  "DSC05163-HDR.jpg",
+  "DSC05166-HDR.jpg",
+  "DSC05169-HDR.jpg",
+  "DSC05172-HDR.jpg",
+  "DSC05175-HDR.jpg",
+  "DSC05178-HDR.jpg",
+  "DSC05181-HDR.jpg",
+  "DSC05184-HDR.jpg",
+  "DSC05187-HDR.jpg",
+  "DSC05190-HDR.jpg",
+  "DSC05193-HDR.jpg",
+  "DSC05196-HDR.jpg",
+  "DSC05199-HDR.jpg",
+  "DSC05202-HDR.jpg",
+  "DSC05205-HDR.jpg",
+  "DSC05208-HDR.jpg",
+  "DSC05211-HDR.jpg"
 ];
 
-// Project Google Photos Album (https://photos.app.goo.gl/4ynHcu712tdxUafs9)
-const PROJECT_GPHOTOS_FILES = [
-  "gphotos_2.jpg", "gphotos_4.jpg", "gphotos_6.jpg", "gphotos_7.jpg", "gphotos_10.jpg",
-  "gphotos_11.jpg", "gphotos_12.jpg", "gphotos_15.jpg", "gphotos_16.jpg", "gphotos_17.jpg",
-  "gphotos_19.jpg", "gphotos_27.jpg", "gphotos_30.jpg", "gphotos_31.jpg", "gphotos_32.jpg",
-  "gphotos_33.jpg", "gphotos_36.jpg", "gphotos_38.jpg", "gphotos_41.jpg", "gphotos_43.jpg",
-  "gphotos_45.jpg", "gphotos_46.jpg", "gphotos_47.jpg", "gphotos_49.jpg", "gphotos_50.jpg",
-  "gphotos_52.jpg", "gphotos_53.jpg"
-];
+const tusarDiazaImages: DriveImageData[] = TUSAR_DIAZA_FILES.map((fileName, idx) => {
+  const localPath = `/Tusar_diaza/${encodeURIComponent(fileName)}`;
+  return {
+    id: `tusar-diaza-${idx + 1}`,
+    name: `Tusar Diaza Project ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `Tusar_diaza/${fileName}`,
+    localPath: localPath,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Tusar Diaza Project",
+    roomType: "Interior Architecture"
+  };
+});
 
-// Project 2 (House & Kitchen Interior)
-const PROJECT_2_FILES = [
-  "1a.jpg",
-  "2.jpg",
-  "3b.jpg",
-  "4.jpg",
-  "4a.jpg"
-];
-
-// New Gallery Files
-const NEW_GALLERY_FILES = [
-  "1688653086239-01_1.jpeg",
-  "1688653086239-01.jpeg",
-  "image_1.jpg",
-  "image.jpg",
-  "IMG_20230620_133829.jpg",
-  "IMG_20230706_184932.jpg",
-  "IMG_20230706_184954_1.jpg",
-  "IMG_20230706_184954-01_1.jpeg",
-  "IMG_20230706_184954-01.jpeg",
-  "IMG_20230706_184954.jpg",
-  "IMG_20230706_185216_1.jpg",
-  "IMG_20230706_185216-01.jpeg",
-  "IMG_20230706_185216.jpg",
-  "IMG_20230706_185734.jpg",
-  "IMG_20230706_185805.jpg",
-  "IMG_20230706_190138.jpg",
-  "IMG_20230706_190309.jpg"
-];
-
-const GALLERY_FILES = [
+// Reju Diaza Project Photos
+const REJU_DIAZA_FILES = [
   "DSC03315-01.jpeg",
   "DSC03320-01.jpeg",
   "DSC03323-01.jpeg",
+  "DSC03356.JPG",
   "DSC03361-01.jpeg",
   "DSC03370-01.jpeg",
   "DSC03394-01.jpeg",
@@ -74,6 +157,9 @@ const GALLERY_FILES = [
   "DSC03415-01.jpeg",
   "DSC03424-01.jpeg",
   "DSC03429 (2)-01.jpeg",
+  "DSC03460.JPG",
+  "DSC03470.JPG",
+  "DSC03473.JPG",
   "DSC03500-01-01.jpeg",
   "DSC03507-01.jpeg",
   "DSC03511-01.jpeg",
@@ -83,93 +169,106 @@ const GALLERY_FILES = [
   "DSC03548-01.jpeg",
   "DSC03578-01.jpeg",
   "DSC03592-01.jpeg",
+  "DSC03592.JPG",
   "IMG_20230217_164442-01.jpeg"
 ];
 
-const p3DriveImages: DriveImageData[] = PROJECT_3_DRIVE_FILES.map((fileName, idx) => {
-  const localPath = `/drive_images/project_3_drive/${encodeURIComponent(fileName)}`;
+const rejuDiazaImages: DriveImageData[] = REJU_DIAZA_FILES.map((fileName, idx) => {
+  const localPath = `/reju_diaza/${encodeURIComponent(fileName)}`;
   return {
-    id: `p3-drive-${idx + 1}`,
-    name: `Featured Project Interior ${idx + 1}`,
+    id: `reju-diaza-${idx + 1}`,
+    name: `Reju Diaza Project ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
-    s3_key: `project_3_drive/${fileName}`,
+    s3_key: `reju_diaza/${fileName}`,
     localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
-    project: "Featured Project",
-    roomType: "Luxury Interior"
-  };
-});
-
-const pGphotosImages: DriveImageData[] = PROJECT_GPHOTOS_FILES.map((fileName, idx) => {
-  const localPath = `/drive_images/project_photos/${encodeURIComponent(fileName)}`;
-  return {
-    id: `p-gphotos-${idx + 1}`,
-    name: `Project Showcase ${idx + 1}`,
-    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
-    s3_key: `project_photos/${fileName}`,
-    localPath: localPath,
-    fileName: fileName,
-    fileType: "image/jpeg",
-    size: 0,
-    project: "Project Showcase",
+    project: "Reju Diaza Project",
     roomType: "Interior Design"
   };
 });
 
-const p2Images: DriveImageData[] = PROJECT_2_FILES.map((fileName, idx) => {
-  const localPath = `/drive_images/project_2/${encodeURIComponent(fileName)}`;
+// Vasundhara Diaza Project Photos
+const VASUNDHARA_DIAZA_FILES = [
+  "1688653086239-01(1).jpeg",
+  "1688653086239-01.jpeg",
+  "IMG_20230620_133829.jpg",
+  "IMG_20230706_184932.jpg",
+  "IMG_20230706_184954(1).jpg",
+  "IMG_20230706_184954-01(1).jpeg",
+  "IMG_20230706_184954-01.jpeg",
+  "IMG_20230706_184954.jpg",
+  "IMG_20230706_185216(1).jpg",
+  "IMG_20230706_185216-01.jpeg",
+  "IMG_20230706_185216.jpg",
+  "IMG_20230706_185734.jpg",
+  "IMG_20230706_185805.jpg",
+  "IMG_20230706_190138.jpg",
+  "IMG_20230706_190309.jpg",
+  "image(1).jpg",
+  "image.jpg"
+];
+
+const vasundharaDiazaImages: DriveImageData[] = VASUNDHARA_DIAZA_FILES.map((fileName, idx) => {
+  const localPath = `/vasundhara_diaza/${encodeURIComponent(fileName)}`;
   return {
-    id: `p2-img-${idx + 1}`,
-    name: `Kitchen & House Interior ${idx + 1}`,
+    id: `vasundhara-diaza-${idx + 1}`,
+    name: `Vasundhara Diaza Project ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
-    s3_key: `project_2/${fileName}`,
+    s3_key: `vasundhara_diaza/${fileName}`,
     localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
-    project: "House Interior Project",
-    roomType: "Kitchen & Living"
+    project: "Vasundhara Diaza Project",
+    roomType: "Interior Design"
   };
 });
 
-const newGalleryImages: DriveImageData[] = NEW_GALLERY_FILES.map((fileName, idx) => {
-  const localPath = `/drive_images/gallery_new/${encodeURIComponent(fileName)}`;
-  return {
-    id: `new-gal-img-${idx + 1}`,
-    name: `Gallery Portfolio ${idx + 1}`,
-    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
-    s3_key: `gallery_new/${fileName}`,
-    localPath: localPath,
-    fileName: fileName,
-    fileType: "image/jpeg",
-    size: 0,
-    project: "Gallery Collection",
-    roomType: "Interior"
-  };
-});
+// Sagamitra Diaza Project Photos
+const SAGAMITRA_DIAZA_FILES = [
+  "Copy of Copy of DSC03416.jpg",
+  "Copy of Copy of DSC03427.jpg",
+  "Copy of Copy of DSC03430.jpg",
+  "Copy of Copy of DSC03484.jpg",
+  "Copy of Copy of DSC03519.jpg",
+  "Copy of Copy of DSC03540.jpg",
+  "Copy of Copy of DSC03620.jpg",
+  "Copy of Copy of DSC03624.jpg",
+  "Copy of Copy of DSC03629.jpg",
+  "Copy of Copy of DSC03630.jpg",
+  "Copy of Copy of DSC03636.jpg",
+  "Copy of Copy of DSC03711.jpg",
+  "Copy of Copy of DSC03733.jpg",
+  "Copy of Copy of DSC03736.jpg",
+  "Copy of Copy of DSC03741.jpg",
+  "Copy of Copy of DSC03747.jpg",
+  "Copy of Copy of DSC03762.jpg",
+  "Copy of Copy of DSC03777.jpg",
+  "Copy of Copy of DSC03827.jpg",
+  "Copy of Copy of DSC03830.jpg"
+];
 
-const galleryImages: DriveImageData[] = GALLERY_FILES.map((fileName, idx) => {
-  const localPath = `/drive_images/gallery/${encodeURIComponent(fileName)}`;
+const sagamitraDiazaImages: DriveImageData[] = SAGAMITRA_DIAZA_FILES.map((fileName, idx) => {
+  const localPath = `/sagamitra_diaza/${encodeURIComponent(fileName)}`;
   return {
-    id: `drive-img-${idx + 1}`,
-    name: fileName.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " "),
+    id: `sagamitra-diaza-${idx + 1}`,
+    name: `Sagamitra Diaza Project ${idx + 1}`,
     s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
-    s3_key: `gallery/${fileName}`,
+    s3_key: `sagamitra_diaza/${fileName}`,
     localPath: localPath,
     fileName: fileName,
     fileType: "image/jpeg",
     size: 0,
-    project: "Gallery",
-    roomType: "Interior"
+    project: "Sagamitra Diaza Project",
+    roomType: "Interior Design"
   };
 });
 
 export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
-  ...p3DriveImages,
-  ...pGphotosImages,
-  ...p2Images,
-  ...newGalleryImages,
-  ...galleryImages
+  ...tusarDiazaImages,
+  ...rejuDiazaImages,
+  ...vasundharaDiazaImages,
+  ...sagamitraDiazaImages
 ];

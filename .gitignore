@@ -33,4 +33,8 @@ Thumbs.db
 
 # Heavy drive image assets (served via Cloudinary)
 frontend/public/drive_images/
+frontend/public/Tusar_diaza/
+frontend/public/reju_diaza/
+frontend/public/vasundhara_diaza/
+frontend/public/sagamitra_diaza/
 

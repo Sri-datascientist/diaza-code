@@ -55,12 +55,10 @@ async function trackPageView(route: string) {
     });
     
     if (!response.ok) {
-      const errorText = await response.text();
-      console.error("Analytics tracking failed:", response.status, errorText);
+      // Fail silently for non-critical analytics tracking
     }
   } catch (error) {
-    // Fail silently - analytics shouldn't break the app
-    console.error("Analytics tracking error:", error);
+    // Fail silently - analytics shouldn't break the app or pollute console
   }
 }
 

@@ -69,7 +69,22 @@ export function getCloudinaryUrl(
     return pathOrKey;
   }
 
-  const mapped = (cloudinaryData.images as Record<string, any>)[key];
+  // If path is a Vite bundled asset (e.g. /assets/...), return as-is
+  if (key.includes("/assets/")) {
+    return pathOrKey;
+  }
+
+  const imagesDict = cloudinaryData.images as Record<string, any>;
+  let mapped = imagesDict[key];
+
+  if (!mapped) {
+    try {
+      const decodedKey = decodeURIComponent(key);
+      mapped = imagesDict[decodedKey];
+    } catch (e) {
+      // Ignore URI decode errors
+    }
+  }
 
   if (!mapped) {
     if (!missingImagesSet.has(key)) {

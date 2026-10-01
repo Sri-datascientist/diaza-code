@@ -1,7 +1,7 @@
 {
   "cloudName": "nw9o0vrv",
   "baseUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload",
-  "totalCount": 346,
+  "totalCount": 332,
   "missingCount": 0,
   "missingFiles": [],
   "images": {
@@ -137,18 +137,6 @@
       "fileName": "DSC04930-HDR.jpg",
       "size": 6339476
     },
-    "/drive_images/Tusar_diaza/DSC04933.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04933",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04933",
-      "fileName": "DSC04933.jpg",
-      "size": 12661674
-    },
-    "/Tusar_diaza/DSC04933.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04933",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04933",
-      "fileName": "DSC04933.jpg",
-      "size": 12661674
-    },
     "/drive_images/Tusar_diaza/DSC04936.jpg": {
       "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04936",
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844015/diaza_studio/drive_images/Tusar_diaza/DSC04936.jpg",
@@ -173,42 +161,6 @@
       "fileName": "DSC04937.jpg",
       "size": 9819856
     },
-    "/drive_images/Tusar_diaza/DSC04938.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04938",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04938",
-      "fileName": "DSC04938.jpg",
-      "size": 14769217
-    },
-    "/Tusar_diaza/DSC04938.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04938",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04938",
-      "fileName": "DSC04938.jpg",
-      "size": 14769217
-    },
-    "/drive_images/Tusar_diaza/DSC04939.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04939",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04939",
-      "fileName": "DSC04939.jpg",
-      "size": 13790662
-    },
-    "/Tusar_diaza/DSC04939.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04939",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04939",
-      "fileName": "DSC04939.jpg",
-      "size": 13790662
-    },
-    "/drive_images/Tusar_diaza/DSC04940.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04940",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04940",
-      "fileName": "DSC04940.jpg",
-      "size": 12437043
-    },
-    "/Tusar_diaza/DSC04940.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04940",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04940",
-      "fileName": "DSC04940.jpg",
-      "size": 12437043
-    },
     "/drive_images/Tusar_diaza/DSC04941.jpg": {
       "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04941",
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844119/diaza_studio/drive_images/Tusar_diaza/DSC04941.jpg",
@@ -220,18 +172,6 @@
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844119/diaza_studio/drive_images/Tusar_diaza/DSC04941.jpg",
       "fileName": "DSC04941.jpg",
       "size": 8817144
-    },
-    "/drive_images/Tusar_diaza/DSC04942.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04942",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04942",
-      "fileName": "DSC04942.jpg",
-      "size": 11766602
-    },
-    "/Tusar_diaza/DSC04942.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04942",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04942",
-      "fileName": "DSC04942.jpg",
-      "size": 11766602
     },
     "/drive_images/Tusar_diaza/DSC04943.jpg": {
       "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04943",
@@ -245,18 +185,6 @@
       "fileName": "DSC04943.jpg",
       "size": 10196380
     },
-    "/drive_images/Tusar_diaza/DSC04944.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04944",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04944",
-      "fileName": "DSC04944.jpg",
-      "size": 11001986
-    },
-    "/Tusar_diaza/DSC04944.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04944",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04944",
-      "fileName": "DSC04944.jpg",
-      "size": 11001986
-    },
     "/drive_images/Tusar_diaza/DSC04945.jpg": {
       "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04945",
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844171/diaza_studio/drive_images/Tusar_diaza/DSC04945.jpg",
@@ -268,18 +196,6 @@
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844171/diaza_studio/drive_images/Tusar_diaza/DSC04945.jpg",
       "fileName": "DSC04945.jpg",
       "size": 10261606
-    },
-    "/drive_images/Tusar_diaza/DSC04946.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04946",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04946",
-      "fileName": "DSC04946.jpg",
-      "size": 12381981
-    },
-    "/Tusar_diaza/DSC04946.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04946",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/Tusar_diaza/DSC04946",
-      "fileName": "DSC04946.jpg",
-      "size": 12381981
     },
     "/drive_images/Tusar_diaza/DSC04947.jpg": {
       "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC04947",

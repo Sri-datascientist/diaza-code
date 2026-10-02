@@ -132,10 +132,8 @@ function buildTransformations(options: CloudinaryOptions): string {
  */
 function transformCloudinaryUrl(url: string, options: CloudinaryOptions): string {
   const transformations = buildTransformations(options);
-  if (url.includes("/image/upload/")) {
-    return url.replace("/image/upload/", `/image/upload/${transformations}/`);
-  }
-  return url;
+  // Matches /image/upload/ and optional existing transformations (e.g. f_auto,q_auto,w_1200/)
+  return url.replace(/\/image\/upload\/(?:[a-z0-9_,-]+\/)?/, `/image/upload/${transformations}/`);
 }
 
 /**

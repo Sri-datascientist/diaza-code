@@ -1,7 +1,7 @@
 {
   "cloudName": "nw9o0vrv",
   "baseUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload",
-  "totalCount": 648,
+  "totalCount": 618,
   "missingCount": 0,
   "missingFiles": [],
   "images": {
@@ -917,18 +917,6 @@
       "fileName": "DSC05130-HDR.jpg",
       "size": 3860493
     },
-    "/drive_images/Tusar_diaza/DSC05133-HDR.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC05133-HDR",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844377/diaza_studio/drive_images/Tusar_diaza/DSC05133-HDR.jpg",
-      "fileName": "DSC05133-HDR.jpg",
-      "size": 5272986
-    },
-    "/Tusar_diaza/DSC05133-HDR.jpg": {
-      "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC05133-HDR",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844377/diaza_studio/drive_images/Tusar_diaza/DSC05133-HDR.jpg",
-      "fileName": "DSC05133-HDR.jpg",
-      "size": 5272986
-    },
     "/drive_images/Tusar_diaza/DSC05136-HDR.jpg": {
       "publicId": "diaza_studio/drive_images/Tusar_diaza/DSC05136-HDR",
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844378/diaza_studio/drive_images/Tusar_diaza/DSC05136-HDR.jpg",
@@ -1601,54 +1589,6 @@
       "fileName": "IMG_20230706_184932.jpg",
       "size": 3588587
     },
-    "/drive_images/vasundhara_diaza/IMG_20230706_184954(1).jpg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954(1)",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844460/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954%281%29.jpg",
-      "fileName": "IMG_20230706_184954(1).jpg",
-      "size": 3697726
-    },
-    "/vasundhara_diaza/IMG_20230706_184954(1).jpg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954(1)",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844460/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954%281%29.jpg",
-      "fileName": "IMG_20230706_184954(1).jpg",
-      "size": 3697726
-    },
-    "/drive_images/vasundhara_diaza/IMG_20230706_184954-01(1).jpeg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01(1)",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844461/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01%281%29.jpg",
-      "fileName": "IMG_20230706_184954-01(1).jpeg",
-      "size": 3520997
-    },
-    "/vasundhara_diaza/IMG_20230706_184954-01(1).jpeg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01(1)",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844461/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01%281%29.jpg",
-      "fileName": "IMG_20230706_184954-01(1).jpeg",
-      "size": 3520997
-    },
-    "/drive_images/vasundhara_diaza/IMG_20230706_184954-01.jpeg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844463/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01.jpg",
-      "fileName": "IMG_20230706_184954-01.jpeg",
-      "size": 2249205
-    },
-    "/vasundhara_diaza/IMG_20230706_184954-01.jpeg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844463/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954-01.jpg",
-      "fileName": "IMG_20230706_184954-01.jpeg",
-      "size": 2249205
-    },
-    "/drive_images/vasundhara_diaza/IMG_20230706_184954.jpg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844464/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954.jpg",
-      "fileName": "IMG_20230706_184954.jpg",
-      "size": 1899356
-    },
-    "/vasundhara_diaza/IMG_20230706_184954.jpg": {
-      "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844464/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_184954.jpg",
-      "fileName": "IMG_20230706_184954.jpg",
-      "size": 1899356
-    },
     "/drive_images/vasundhara_diaza/IMG_20230706_185216(1).jpg": {
       "publicId": "diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_185216(1)",
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790844465/diaza_studio/drive_images/vasundhara_diaza/IMG_20230706_185216%281%29.jpg",
@@ -2141,30 +2081,6 @@
       "fileName": "IMG_20251210_162029.jpg",
       "size": 1915067
     },
-    "/drive_images/Parvathy site/IMG_20251210_162824.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "fileName": "IMG_20251210_162824.jpg",
-      "size": 1552341
-    },
-    "/drive_images/parvathy_site/IMG_20251210_162824.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "fileName": "IMG_20251210_162824.jpg",
-      "size": 1552341
-    },
-    "/Parvathy site/IMG_20251210_162824.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "fileName": "IMG_20251210_162824.jpg",
-      "size": 1552341
-    },
-    "/parvathy_site/IMG_20251210_162824.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_162824",
-      "fileName": "IMG_20251210_162824.jpg",
-      "size": 1552341
-    },
     "/drive_images/Parvathy site/IMG_20251210_162944.jpg": {
       "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_162944",
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_162944",
@@ -2428,102 +2344,6 @@
       "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184409",
       "fileName": "IMG_20251210_184409.jpg",
       "size": 2069044
-    },
-    "/drive_images/Parvathy site/IMG_20251210_184501.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "fileName": "IMG_20251210_184501.jpg",
-      "size": 1990569
-    },
-    "/drive_images/parvathy_site/IMG_20251210_184501.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "fileName": "IMG_20251210_184501.jpg",
-      "size": 1990569
-    },
-    "/Parvathy site/IMG_20251210_184501.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "fileName": "IMG_20251210_184501.jpg",
-      "size": 1990569
-    },
-    "/parvathy_site/IMG_20251210_184501.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501",
-      "fileName": "IMG_20251210_184501.jpg",
-      "size": 1990569
-    },
-    "/drive_images/Parvathy site/IMG_20251210_184501_1.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "fileName": "IMG_20251210_184501_1.jpg",
-      "size": 1982844
-    },
-    "/drive_images/parvathy_site/IMG_20251210_184501_1.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "fileName": "IMG_20251210_184501_1.jpg",
-      "size": 1982844
-    },
-    "/Parvathy site/IMG_20251210_184501_1.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "fileName": "IMG_20251210_184501_1.jpg",
-      "size": 1982844
-    },
-    "/parvathy_site/IMG_20251210_184501_1.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/f_auto,q_auto/diaza_studio/drive_images/parvathy_site/IMG_20251210_184501_1",
-      "fileName": "IMG_20251210_184501_1.jpg",
-      "size": 1982844
-    },
-    "/drive_images/Parvathy site/IMG_20251210_184506.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184506",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948657/diaza_studio/drive_images/parvathy_site/IMG_20251210_184506.jpg",
-      "fileName": "IMG_20251210_184506.jpg",
-      "size": 1893422
-    },
-    "/drive_images/parvathy_site/IMG_20251210_184506.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184506",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948657/diaza_studio/drive_images/parvathy_site/IMG_20251210_184506.jpg",
-      "fileName": "IMG_20251210_184506.jpg",
-      "size": 1893422
-    },
-    "/Parvathy site/IMG_20251210_184506.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184506",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948657/diaza_studio/drive_images/parvathy_site/IMG_20251210_184506.jpg",
-      "fileName": "IMG_20251210_184506.jpg",
-      "size": 1893422
-    },
-    "/parvathy_site/IMG_20251210_184506.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184506",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948657/diaza_studio/drive_images/parvathy_site/IMG_20251210_184506.jpg",
-      "fileName": "IMG_20251210_184506.jpg",
-      "size": 1893422
-    },
-    "/drive_images/Parvathy site/IMG_20251210_184538.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184538",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948691/diaza_studio/drive_images/parvathy_site/IMG_20251210_184538.jpg",
-      "fileName": "IMG_20251210_184538.jpg",
-      "size": 1964453
-    },
-    "/drive_images/parvathy_site/IMG_20251210_184538.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184538",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948691/diaza_studio/drive_images/parvathy_site/IMG_20251210_184538.jpg",
-      "fileName": "IMG_20251210_184538.jpg",
-      "size": 1964453
-    },
-    "/Parvathy site/IMG_20251210_184538.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184538",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948691/diaza_studio/drive_images/parvathy_site/IMG_20251210_184538.jpg",
-      "fileName": "IMG_20251210_184538.jpg",
-      "size": 1964453
-    },
-    "/parvathy_site/IMG_20251210_184538.jpg": {
-      "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184538",
-      "cloudinaryUrl": "https://res.cloudinary.com/nw9o0vrv/image/upload/v1790948691/diaza_studio/drive_images/parvathy_site/IMG_20251210_184538.jpg",
-      "fileName": "IMG_20251210_184538.jpg",
-      "size": 1964453
     },
     "/drive_images/Parvathy site/IMG_20251210_184702.jpg": {
       "publicId": "diaza_studio/drive_images/parvathy_site/IMG_20251210_184702",

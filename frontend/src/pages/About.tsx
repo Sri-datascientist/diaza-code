@@ -5,6 +5,7 @@ import heroImage from "@assets/stock_images/about_hero_compact_bedroom.png";
 import whatWeDoImage from "@assets/stock_images/what_we_do_living_corner.png";
 import founderImage from "@assets/founder_1759774922910.png";
 import { DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -51,6 +52,10 @@ export default function About() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Di-Aza Studio | Interior Designers & Architecture in Bangalore"
+        description="Learn about Di-Aza Studio's design philosophy, leadership, and DIAZA framework that elevates luxury interior spaces in Bangalore."
+      />
       {/* Hero Section */}
       <section 
         className="relative w-full overflow-hidden h-[300px] sm:h-[350px] lg:h-[400px]"

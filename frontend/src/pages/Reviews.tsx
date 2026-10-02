@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Star, Quote, User, UserCheck } from "lucide-react";
+import { SEO } from "@/components/SEO";
 // Using S3 image for hero background
 const luxuryLivingRoom = "https://jgi-menteetracker.s3.ap-south-1.amazonaws.com/Ai+generated-20251016T014813Z-1-001/Ai+generated/WOOD+HOME/LIVING+%26+DINING/Living+corner.png";
 import { DecorativeDivider1, DecorativeDivider2 } from "@/components/Decorative";
@@ -208,6 +209,10 @@ export default function Reviews() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Client Reviews & Testimonials | Di-Aza Studio Bangalore"
+        description="Read authentic client reviews and testimonials for Di-Aza Studio in Bangalore. See why homeowners trust our interior design methodology."
+      />
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden h-[400px]">
         <div className="absolute inset-0 z-0">

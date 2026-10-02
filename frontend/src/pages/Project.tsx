@@ -3,6 +3,7 @@ import luxuryLivingRoom from "@assets/stock_images/modern_luxury_interi_d54f89a0
 import { DecorativeDivider1, DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
 import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
 import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
+import { SEO } from "@/components/SEO";
 
 const PROJECT_CATEGORIES = [
   { id: "all", label: "All Projects" },
@@ -25,6 +26,10 @@ export default function Project() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Interior Design Portfolio & Projects | Di-Aza Studio Bangalore"
+        description="Browse Di-Aza Studio's comprehensive portfolio of 230+ completed luxury interior design projects in Bangalore across apartments and villas."
+      />
       {/* Hero Section with Parallax */}
       <section 
         className="relative w-full overflow-hidden h-[400px] sm:h-[450px] lg:h-[500px]"

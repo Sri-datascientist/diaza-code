@@ -19,6 +19,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(2, "First name must be at least 2 characters"),
@@ -70,6 +71,10 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Contact Di-Aza Studio | Schedule Interior Design Consultation"
+        description="Get in touch with Di-Aza Studio in Bangalore. Book a consultation for your home, apartment, or villa interior design project."
+      />
       {/* Hero Section */}
       <section 
         className="relative w-full overflow-hidden h-[300px] sm:h-[350px] lg:h-[400px]"

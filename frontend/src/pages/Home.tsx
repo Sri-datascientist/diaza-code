@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
 import { AutoCarousel } from "@/components/AutoCarousel";
 import { getCloudinaryUrl } from "@/lib/cloudinary";
+import { SEO } from "@/components/SEO";
 import heroImage1 from "@assets/stock_images/compact_guest_bedroom.png";
 import heroImage2 from "@assets/stock_images/informal_living_room.png";
 import heroImage3 from "@assets/stock_images/cinematic_bedroom.png";
@@ -23,7 +24,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen">
+      <SEO 
+        title="Di-Aza Studio | Luxury Interior Design Studio in Bangalore"
+        description="Di-Aza Studio is a premier interior design firm in Bangalore delivering bespoke luxury interiors for villas, apartments, and modern living spaces."
+      />
       {/* Hero Section - 848px height */}
       <section 
         className="relative w-full overflow-hidden h-[500px] sm:h-[600px] lg:h-[848px]"
@@ -119,6 +124,6 @@ export default function Home() {
 
         <DecorativeDivider3 />
       </section>
-    </div>
+    </main>
   );
 }

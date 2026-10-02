@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Layout, Settings, Zap, Palette, DollarSign, Clock } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 // Import stock images
 import heroImage from "@assets/stock_images/process_background_kitchen.png";
@@ -100,6 +101,10 @@ export default function Process() {
 
   return (
     <div className="min-h-screen bg-[#FFFAEF] overflow-x-hidden">
+      <SEO 
+        title="Our 6-Step Interior Design Methodology | Di-Aza Studio Bangalore"
+        description="Discover Di-Aza Studio's 6-step DIAZA interior execution methodology: Space planning, Technical Excellence, Switch Sense, Material Wisdom, Budget Brilliance, and Pulse Control."
+      />
       {/* Hero Section */}
       <section 
         className="relative w-full overflow-hidden h-[300px] sm:h-[350px] lg:h-[400px]"

@@ -108,11 +108,11 @@ export default function Home() {
           "Reju Diaza Project",
           "Vasundhara Diaza Project",
           "Sagamitra Diaza Project"
-        ].map((projectId, idx) => (
+        ].map((projectId) => (
           <div key={projectId} className="w-full">
             <AutoCarousel 
               projectId={projectId}
-              speed={35 + idx * 5}
+              speed={50}
               showTwoRows={true}
             />
           </div>

@@ -128,12 +128,7 @@ export default function Project() {
                 return (
                   <div
                     key={image.id}
-                    className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 animate-fade-up bg-white"
-                    style={{ 
-                      animationDelay: `${Math.min(index * 0.05, 1)}s`,
-                      opacity: 0,
-                      animation: `fade-up 0.8s ${Math.min(index * 0.05, 1)}s ease forwards`
-                    }}
+                    className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 bg-white"
                     data-testid={`project-image-${index}`}
                   >
                     {/* Image Container */}
@@ -143,8 +138,8 @@ export default function Project() {
                         srcSet={srcSet || undefined}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         alt={image.name || `Project ${index + 1}`}
-                        className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-700 ease-out"
-                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                        loading={index < 6 ? "eager" : "lazy"}
                         decoding="async"
                         onError={(e) => {
                           const target = e.currentTarget;

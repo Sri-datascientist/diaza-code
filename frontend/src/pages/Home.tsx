@@ -102,17 +102,17 @@ export default function Home() {
         <DecorativeDivider2 />
 
         {[
-          "Parvathy Site Project",
-          "Samyukta Project",
-          "Tusar Diaza Project",
-          "Reju Diaza Project",
-          "Vasundhara Diaza Project",
-          "Sagamitra Diaza Project"
-        ].map((projectId) => (
-          <div key={projectId} className="w-full">
+          { id: "Parvathy Site Project", speed: 42 },
+          { id: "Samyukta Project", speed: 55 },
+          { id: "Tusar Diaza Project", speed: 46 },
+          { id: "Reju Diaza Project", speed: 60 },
+          { id: "Vasundhara Diaza Project", speed: 48 },
+          { id: "Sagamitra Diaza Project", speed: 52 }
+        ].map((proj) => (
+          <div key={proj.id} className="w-full">
             <AutoCarousel 
-              projectId={projectId}
-              speed={50}
+              projectId={proj.id}
+              speed={proj.speed}
               showTwoRows={true}
             />
           </div>

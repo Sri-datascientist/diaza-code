@@ -62,21 +62,20 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
             {firstRowImages.map((image, index) => {
               const rawSrc = image.s3_url || '';
               const fallback = image.localPath || rawSrc;
-              const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
-              const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
+              const imgSrc = getCloudinaryUrl(rawSrc, { width: 500 });
+              const isEager = index < 6;
               return (
                 <div 
                   key={`first-${image.id}-${index}`} 
-                  className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  className="flex-shrink-0 w-[280px] h-[190px] sm:w-[330px] sm:h-[220px] lg:w-[380px] lg:h-[250px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-[#EFEAD8]"
                   data-testid={`first-row-image-${index}`}
                 >
                   <img
                     src={imgSrc}
-                    srcSet={srcSet || undefined}
-                    sizes="(max-width: 640px) 300px, (max-width: 1024px) 350px, 400px"
                     alt={image.name || `Portfolio image ${index + 1}`}
                     className="w-full h-full object-cover"
-                    loading="lazy"
+                    loading={isEager ? "eager" : "lazy"}
+                    fetchPriority={isEager ? "high" : "low"}
                     decoding="async"
                     onError={(e) => {
                       const target = e.currentTarget;
@@ -105,21 +104,20 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
             {secondRowImages.map((image, index) => {
               const rawSrc = image.s3_url || '';
               const fallback = image.localPath || rawSrc;
-              const imgSrc = getCloudinaryUrl(rawSrc, { width: 600 });
-              const srcSet = getCloudinarySrcSet(rawSrc, [300, 450, 600]);
+              const imgSrc = getCloudinaryUrl(rawSrc, { width: 500 });
+              const isEager = index < 6;
               return (
                 <div 
                   key={`second-${image.id}-${index}`} 
-                  className="flex-shrink-0 w-[300px] h-[200px] sm:w-[350px] sm:h-[230px] lg:w-[400px] lg:h-[260px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  className="flex-shrink-0 w-[280px] h-[190px] sm:w-[330px] sm:h-[220px] lg:w-[380px] lg:h-[250px] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-[#EFEAD8]"
                   data-testid={`second-row-image-${index}`}
                 >
                   <img
                     src={imgSrc}
-                    srcSet={srcSet || undefined}
-                    sizes="(max-width: 640px) 300px, (max-width: 1024px) 350px, 400px"
                     alt={image.name || `Portfolio image ${index + 1}`}
                     className="w-full h-full object-cover"
-                    loading="lazy"
+                    loading={isEager ? "eager" : "lazy"}
+                    fetchPriority={isEager ? "high" : "low"}
                     decoding="async"
                     onError={(e) => {
                       const target = e.currentTarget;

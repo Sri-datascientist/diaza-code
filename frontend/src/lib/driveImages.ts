@@ -379,10 +379,10 @@ const samyuktaImages: DriveImageData[] = SAMYUKTA_FILES.map((fileName, idx) => {
 });
 
 export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
+  ...parvathySiteImages,
+  ...samyuktaImages,
   ...tusarDiazaImages,
   ...rejuDiazaImages,
   ...vasundharaDiazaImages,
-  ...sagamitraDiazaImages,
-  ...parvathySiteImages,
-  ...samyuktaImages
+  ...sagamitraDiazaImages
 ];

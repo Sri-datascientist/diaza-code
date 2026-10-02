@@ -1,10 +1,26 @@
+import { useState } from "react";
 import luxuryLivingRoom from "@assets/stock_images/modern_luxury_interi_d54f89a0.jpg";
 import { DecorativeDivider1, DecorativeDivider2, DecorativeDivider3 } from "@/components/Decorative";
 import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
 import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
 
+const PROJECT_CATEGORIES = [
+  { id: "all", label: "All Projects" },
+  { id: "Parvathy Site Project", label: "Parvathy Site" },
+  { id: "Samyukta Project", label: "Samyukta" },
+  { id: "Tusar Diaza Project", label: "Tusar Diaza" },
+  { id: "Reju Diaza Project", label: "Reju Diaza" },
+  { id: "Vasundhara Diaza Project", label: "Vasundhara Diaza" },
+  { id: "Sagamitra Diaza Project", label: "Sagamitra Diaza" }
+];
+
 export default function Project() {
-  const imagesToDisplay = LOCAL_DRIVE_IMAGES;
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const imagesToDisplay = selectedCategory === "all" 
+    ? LOCAL_DRIVE_IMAGES 
+    : LOCAL_DRIVE_IMAGES.filter(img => img.project === selectedCategory);
+
   const imageCount = imagesToDisplay.length;
 
   return (
@@ -76,7 +92,7 @@ export default function Project() {
               <div className="flex items-center justify-center gap-8 pt-4">
                 <div className="text-center">
                   <div className="text-4xl font-playfair text-[#8B7355] font-semibold">{imageCount}</div>
-                  <div className="text-sm text-[#8B7355]/70 font-inria mt-1">Projects</div>
+                  <div className="text-sm text-[#8B7355]/70 font-inria mt-1">Photos</div>
                 </div>
                 <div className="h-12 w-px bg-[#8B7355]/30" />
                 <div className="text-center">
@@ -85,6 +101,29 @@ export default function Project() {
                 </div>
               </div>
             )}
+
+            {/* Category Filter Pills */}
+            <div className="flex flex-wrap items-center justify-center gap-3 pt-6 max-w-4xl mx-auto">
+              {PROJECT_CATEGORIES.map((cat) => {
+                const isSelected = selectedCategory === cat.id;
+                const count = cat.id === "all" 
+                  ? LOCAL_DRIVE_IMAGES.length 
+                  : LOCAL_DRIVE_IMAGES.filter(img => img.project === cat.id).length;
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => setSelectedCategory(cat.id)}
+                    className={`px-5 py-2.5 rounded-full text-sm font-inria transition-all duration-300 border ${
+                      isSelected
+                        ? "bg-[#8B7355] text-white border-[#8B7355] shadow-md scale-105"
+                        : "bg-white/80 text-[#8B7355] border-[#8B7355]/30 hover:border-[#8B7355] hover:bg-white"
+                    }`}
+                  >
+                    {cat.label} ({count})
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
 

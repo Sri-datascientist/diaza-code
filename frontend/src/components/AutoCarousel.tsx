@@ -54,7 +54,7 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
           <div 
             className="flex gap-6"
             style={{
-              animation: `scroll-left ${speed}s linear infinite`,
+              animation: `scroll-left ${firstRowImages.length * 6}s linear infinite`,
               width: 'fit-content'
             }}
             data-testid="first-row-track"
@@ -96,7 +96,7 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
           <div 
             className="flex gap-6"
             style={{
-              animation: `scroll-right ${speed}s linear infinite`,
+              animation: `scroll-right ${secondRowImages.length * 6}s linear infinite`,
               width: 'fit-content'
             }}
             data-testid="second-row-track"

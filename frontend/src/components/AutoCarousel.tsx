@@ -6,15 +6,18 @@ interface AutoCarouselProps {
   speed?: number;
   className?: string;
   showTwoRows?: boolean;
+  projectId?: string;
 }
 
-export function AutoCarousel({ speed = 30, className = "", showTwoRows = false }: AutoCarouselProps) {
+export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, projectId }: AutoCarouselProps) {
   const [duplicatedImages, setDuplicatedImages] = useState<any[]>([]);
   const [firstRowImages, setFirstRowImages] = useState<any[]>([]);
   const [secondRowImages, setSecondRowImages] = useState<any[]>([]);
 
   useEffect(() => {
-    const images = LOCAL_DRIVE_IMAGES;
+    const images = projectId 
+      ? LOCAL_DRIVE_IMAGES.filter(img => img.project === projectId)
+      : LOCAL_DRIVE_IMAGES;
     if (images && images.length > 0) {
       if (showTwoRows) {
         // First row: top-to-bottom sequence (original order)
@@ -30,7 +33,7 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false }
         setDuplicatedImages([...images, ...images, ...images]);
       }
     }
-  }, [showTwoRows]);
+  }, [showTwoRows, projectId]);
 
   // Pure Cloudinary static loading - render directly without S3 loading wait
 

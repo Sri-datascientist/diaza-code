@@ -95,21 +95,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Second Section with Automatic Image Carousels - 844px height */}
+      {/* 6 Project Infinite Scroller Sections (No titles, pure dual-row scrollers) */}
       <section 
-        className="w-full py-10 sm:py-16 lg:py-20 flex flex-col justify-center bg-[#FFFAEF] min-h-[600px] lg:min-h-[844px]"
+        className="w-full py-10 sm:py-16 lg:py-20 flex flex-col justify-center bg-[#FFFAEF] min-h-[600px] gap-12"
       >
-        {/* Top Divider */}
         <DecorativeDivider2 />
 
-        {/* Dual Row Carousel - Opposite Directions and Sequences */}
-        <AutoCarousel 
-          className="mb-8"
-          speed={400}
-          showTwoRows={true}
-        />
+        {[
+          "Parvathy Site Project",
+          "Samyukta Project",
+          "Tusar Diaza Project",
+          "Reju Diaza Project",
+          "Vasundhara Diaza Project",
+          "Sagamitra Diaza Project"
+        ].map((projectId, idx) => (
+          <div key={projectId} className="w-full">
+            <AutoCarousel 
+              projectId={projectId}
+              speed={35 + idx * 5}
+              showTwoRows={true}
+            />
+          </div>
+        ))}
 
-        {/* Second Divider */}
         <DecorativeDivider3 />
       </section>
     </div>

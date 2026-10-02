@@ -113,10 +113,10 @@ export default function Project() {
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`px-5 py-2.5 rounded-full text-sm font-inria transition-all duration-300 border ${
+                    className={`px-5 py-2.5 rounded-full text-sm font-inria font-medium transition-all duration-300 border ${
                       isSelected
-                        ? "bg-[#8B7355] text-white border-[#8B7355] shadow-md scale-105"
-                        : "bg-white/80 text-[#8B7355] border-[#8B7355]/30 hover:border-[#8B7355] hover:bg-white"
+                        ? "bg-[#8B7355] text-white border-[#8B7355] shadow-lg shadow-[#8B7355]/30 ring-2 ring-[#8B7355]/20 scale-105"
+                        : "bg-white text-[#8B7355] border-[#8B7355]/40 shadow-sm hover:shadow-md hover:border-[#8B7355] hover:bg-[#8B7355]/5 hover:scale-[1.02]"
                     }`}
                   >
                     {cat.label} ({count})

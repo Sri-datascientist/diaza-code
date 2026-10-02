@@ -259,9 +259,130 @@ const sagamitraDiazaImages: DriveImageData[] = SAGAMITRA_DIAZA_FILES.map((fileNa
   };
 });
 
+// Parvathy Site Project Photos
+const PARVATHY_SITE_FILES = [
+  "IMG_20251210_160622.jpg",
+  "IMG_20251210_160638.jpg",
+  "IMG_20251210_160718.jpg",
+  "IMG_20251210_160719.jpg",
+  "IMG_20251210_162006.jpg",
+  "IMG_20251210_162029.jpg",
+  "IMG_20251210_162824.jpg",
+  "IMG_20251210_162944.jpg",
+  "IMG_20251210_163632.jpg",
+  "IMG_20251210_163641.jpg",
+  "IMG_20251210_164425.jpg",
+  "IMG_20251210_164514.jpg",
+  "IMG_20251210_164526.jpg",
+  "IMG_20251210_164541.jpg",
+  "IMG_20251210_184400.jpg",
+  "IMG_20251210_184402.jpg",
+  "IMG_20251210_184404.jpg",
+  "IMG_20251210_184409.jpg",
+  "IMG_20251210_184501.jpg",
+  "IMG_20251210_184501_1.jpg",
+  "IMG_20251210_184506.jpg",
+  "IMG_20251210_184538.jpg",
+  "IMG_20251210_184702.jpg",
+  "IMG_20251210_184731.jpg",
+  "IMG_20251210_184752_1.jpg",
+  "IMG_20251210_184814.jpg",
+  "IMG_20251210_184915.jpg",
+  "IMG_20251210_184920.jpg",
+  "IMG_20251210_185121.jpg",
+  "IMG_20251210_185125.jpg",
+  "IMG_20251210_193140.jpg",
+  "IMG_20251210_193203.jpg",
+  "IMG_20251210_193225.jpg",
+  "IMG_20251210_193239.jpg",
+  "IMG_20251210_193311.jpg",
+  "IMG_20251210_193457.jpg",
+  "IMG_20251210_193530.jpg",
+  "IMG_20251210_193556.jpg",
+  "IMG_20251210_193709.jpg",
+  "IMG_20251210_193740.jpg",
+  "IMG_20251210_195340.jpg",
+  "IMG_20251210_200614.jpg",
+  "IMG_20251210_200653.jpg",
+  "IMG_20251210_200659.jpg",
+  "IMG_20251210_200724.jpg",
+  "IMG_20251210_200737.jpg",
+  "IMG_20251210_200808.jpg",
+  "IMG_20251210_200827.jpg",
+  "IMG_20251210_200916.jpg",
+  "IMG_20251210_200917.jpg",
+  "IMG_20251210_200942.jpg",
+  "IMG_20251210_201103.jpg",
+  "IMG_20251210_201115.jpg",
+  "IMG_20251210_201254.jpg",
+  "IMG_20251210_201715.jpg",
+  "IMG_20251210_201723.jpg",
+  "IMG_20251210_201745.jpg",
+  "IMG_20251210_202011.jpg",
+  "IMG_20251210_202042.jpg",
+  "IMG_20251210_203710.jpg"
+];
+
+const parvathySiteImages: DriveImageData[] = PARVATHY_SITE_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/Parvathy site/${encodeURIComponent(fileName)}`;
+  return {
+    id: `parvathy-site-${idx + 1}`,
+    name: `Parvathy Site Project ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `Parvathy site/${fileName}`,
+    localPath: localPath,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Parvathy Site Project",
+    roomType: "Interior Design"
+  };
+});
+
+// Samyukta Project Photos
+const SAMYUKTA_FILES = [
+  "1709880218736-01.jpeg",
+  "IMG_20240308_114353.jpg",
+  "IMG_20240308_114754.jpg",
+  "IMG_20240308_115444.jpg",
+  "IMG_20240308_115524.jpg",
+  "IMG_20240308_115553.jpg",
+  "IMG_20240308_115750.jpg",
+  "IMG_20240308_115806.jpg",
+  "IMG_20240308_115817.jpg",
+  "IMG_20240308_115828.jpg",
+  "IMG_20240308_120039.jpg",
+  "IMG_20240308_120045.jpg",
+  "IMG_20240308_120430.jpg",
+  "IMG_20240308_120629.jpg",
+  "IMG_20240308_120653.jpg",
+  "IMG_20240308_121548.jpg",
+  "IMG_20240309_092532.jpg",
+  "IMG_20240309_092639.jpg",
+  "IMG_20240312_223018.jpg"
+];
+
+const samyuktaImages: DriveImageData[] = SAMYUKTA_FILES.map((fileName, idx) => {
+  const localPath = `/drive_images/Samyukta/${encodeURIComponent(fileName)}`;
+  return {
+    id: `samyukta-${idx + 1}`,
+    name: `Samyukta Project ${idx + 1}`,
+    s3_url: getCloudinaryUrl(localPath, { width: 1200 }),
+    s3_key: `Samyukta/${fileName}`,
+    localPath: localPath,
+    fileName: fileName,
+    fileType: "image/jpeg",
+    size: 0,
+    project: "Samyukta Project",
+    roomType: "Interior Design"
+  };
+});
+
 export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
   ...tusarDiazaImages,
   ...rejuDiazaImages,
   ...vasundharaDiazaImages,
-  ...sagamitraDiazaImages
+  ...sagamitraDiazaImages,
+  ...parvathySiteImages,
+  ...samyuktaImages
 ];

@@ -100,27 +100,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6 Project Infinite Scroller Sections (No titles, pure dual-row scrollers) */}
+      {/* Dual Row Infinite Scroller with Mixed Projects */}
       <section 
         className="w-full py-10 sm:py-16 lg:py-20 flex flex-col justify-center bg-[#FFFAEF] min-h-[600px] gap-12"
       >
         <DecorativeDivider2 />
 
-        {[
-          "Parvathy Site Project",
-          "Samyukta Project",
-          "Tusar Diaza Project",
-          "Reju Diaza Project",
-          "Vasundhara Diaza Project",
-          "Sagamitra Diaza Project"
-        ].map((projectId) => (
-          <div key={projectId} className="w-full">
-            <AutoCarousel 
-              projectId={projectId}
-              showTwoRows={true}
-            />
-          </div>
-        ))}
+        <div className="w-full">
+          <AutoCarousel 
+            showTwoRows={true}
+          />
+        </div>
 
         <DecorativeDivider3 />
       </section>

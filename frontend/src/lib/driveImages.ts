@@ -368,11 +368,25 @@ const samyuktaImages: DriveImageData[] = SAMYUKTA_FILES.map((fileName, idx) => {
   };
 });
 
-export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
-  ...parvathySiteImages,
-  ...samyuktaImages,
-  ...tusarDiazaImages,
-  ...rejuDiazaImages,
-  ...vasundharaDiazaImages,
-  ...sagamitraDiazaImages
-];
+// Helper to interleave multiple arrays evenly so project images are mixed smoothly
+function interleaveArrays<T>(...arrays: T[][]): T[] {
+  const result: T[] = [];
+  const maxLength = Math.max(...arrays.map(arr => arr.length));
+  for (let i = 0; i < maxLength; i++) {
+    for (const arr of arrays) {
+      if (i < arr.length) {
+        result.push(arr[i]);
+      }
+    }
+  }
+  return result;
+}
+
+export const LOCAL_DRIVE_IMAGES: DriveImageData[] = interleaveArrays(
+  parvathySiteImages,
+  tusarDiazaImages,
+  samyuktaImages,
+  rejuDiazaImages,
+  vasundharaDiazaImages,
+  sagamitraDiazaImages
+);

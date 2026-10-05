@@ -22,7 +22,7 @@ def main():
     api_key = os.environ.get("CLOUDINARY_API_KEY")
     api_secret = os.environ.get("CLOUDINARY_API_SECRET")
 
-    base_dir = os.path.join("frontend", "public", "drive_images")
+    base_dir = os.path.join("frontend", "public")
     output_json = os.path.join("frontend", "src", "data", "cloudinary-images.json")
 
     mapping = {}
@@ -41,7 +41,7 @@ def main():
         for file in files:
             if file.lower().endswith((".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg")):
                 full_path = os.path.join(root, file)
-                rel_path = os.path.relpath(full_path, os.path.join("frontend", "public")).replace("\\", "/")
+                rel_path = os.path.relpath(full_path, base_dir).replace("\\", "/")
                 local_key = "/" + rel_path
 
                 # Generate clean public ID

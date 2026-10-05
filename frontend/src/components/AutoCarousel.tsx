@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LOCAL_DRIVE_IMAGES } from "@/lib/driveImages";
+import { LOCAL_DRIVE_IMAGES, TOP_ROW_PROJECT_IMAGES, BOTTOM_ROW_PROJECT_IMAGES } from "@/lib/driveImages";
 import { getCloudinaryUrl, getCloudinarySrcSet } from "@/lib/cloudinary";
 
 interface AutoCarouselProps {
@@ -15,22 +15,28 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
   const [secondRowImages, setSecondRowImages] = useState<any[]>([]);
 
   useEffect(() => {
-    const images = projectId 
-      ? LOCAL_DRIVE_IMAGES.filter(img => img.project === projectId)
-      : LOCAL_DRIVE_IMAGES;
-    if (images && images.length > 0) {
-      if (showTwoRows) {
-        // First row: top-to-bottom sequence (original order)
-        const firstRow = [...images, ...images, ...images];
-        setFirstRowImages(firstRow);
-        
-        // Second row: bottom-to-top sequence (reversed order)
-        const reversedImages = [...images].reverse();
-        const secondRow = [...reversedImages, ...reversedImages, ...reversedImages];
-        setSecondRowImages(secondRow);
-      } else {
-        // Single row (original behavior)
-        setDuplicatedImages([...images, ...images, ...images]);
+    if (showTwoRows && !projectId) {
+      // Top row: 3 projects randomly mixed
+      const firstRow = [...TOP_ROW_PROJECT_IMAGES, ...TOP_ROW_PROJECT_IMAGES, ...TOP_ROW_PROJECT_IMAGES];
+      setFirstRowImages(firstRow);
+      
+      // Bottom row: 3 other projects randomly mixed
+      const secondRow = [...BOTTOM_ROW_PROJECT_IMAGES, ...BOTTOM_ROW_PROJECT_IMAGES, ...BOTTOM_ROW_PROJECT_IMAGES];
+      setSecondRowImages(secondRow);
+    } else {
+      const images = projectId 
+        ? LOCAL_DRIVE_IMAGES.filter(img => img.project === projectId)
+        : LOCAL_DRIVE_IMAGES;
+      if (images && images.length > 0) {
+        if (showTwoRows) {
+          const firstRow = [...images, ...images, ...images];
+          setFirstRowImages(firstRow);
+          const reversedImages = [...images].reverse();
+          const secondRow = [...reversedImages, ...reversedImages, ...reversedImages];
+          setSecondRowImages(secondRow);
+        } else {
+          setDuplicatedImages([...images, ...images, ...images]);
+        }
       }
     }
   }, [showTwoRows, projectId]);

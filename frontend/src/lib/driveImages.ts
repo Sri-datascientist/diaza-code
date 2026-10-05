@@ -368,25 +368,32 @@ const samyuktaImages: DriveImageData[] = SAMYUKTA_FILES.map((fileName, idx) => {
   };
 });
 
-// Helper to interleave multiple arrays evenly so project images are mixed smoothly
-function interleaveArrays<T>(...arrays: T[][]): T[] {
-  const result: T[] = [];
-  const maxLength = Math.max(...arrays.map(arr => arr.length));
-  for (let i = 0; i < maxLength; i++) {
-    for (const arr of arrays) {
-      if (i < arr.length) {
-        result.push(arr[i]);
-      }
-    }
+// Helper function to deterministically or pseudo-randomly shuffle an array
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-  return result;
+  return arr;
 }
 
-export const LOCAL_DRIVE_IMAGES: DriveImageData[] = interleaveArrays(
-  parvathySiteImages,
-  tusarDiazaImages,
-  samyuktaImages,
-  rejuDiazaImages,
-  vasundharaDiazaImages,
-  sagamitraDiazaImages
-);
+// 3 Projects dedicated to Top Row: Parvathy Site, Tusar Diaza, Samyukta
+export const TOP_ROW_PROJECT_IMAGES: DriveImageData[] = shuffleArray([
+  ...parvathySiteImages,
+  ...tusarDiazaImages,
+  ...samyuktaImages
+]);
+
+// 3 Projects dedicated to Bottom Row: Reju Diaza, Vasundhara Diaza, Sagamitra Diaza
+export const BOTTOM_ROW_PROJECT_IMAGES: DriveImageData[] = shuffleArray([
+  ...rejuDiazaImages,
+  ...vasundharaDiazaImages,
+  ...sagamitraDiazaImages
+]);
+
+// Combined export for backward compatibility
+export const LOCAL_DRIVE_IMAGES: DriveImageData[] = [
+  ...TOP_ROW_PROJECT_IMAGES,
+  ...BOTTOM_ROW_PROJECT_IMAGES
+];

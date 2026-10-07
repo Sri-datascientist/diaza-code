@@ -40,7 +40,7 @@ export default function Project() {
             alt="Interior design background" 
             className="w-full h-full object-cover"
             loading="eager"
-            fetchPriority="high"
+            {...{ fetchpriority: "high" }}
             onError={(e) => {
               e.currentTarget.src = luxuryLivingRoom;
             }}

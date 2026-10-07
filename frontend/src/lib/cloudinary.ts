@@ -18,13 +18,16 @@ export interface CloudinaryPropsOptions extends CloudinaryOptions {
 const CLOUD_NAME =
   (import.meta as any).env?.VITE_CLOUDINARY_CLOUD_NAME ||
   cloudinaryData.cloudName ||
-  "diaza-studio";
+  "nw9o0vrv";
 
 const BASE_URL = `https://res.cloudinary.com/${CLOUD_NAME}/image/upload`;
 
 // Internal cache for missing image reports
 const missingImagesSet = new Set<string>();
 
+/**
+ * Normalizes local image path to match JSON key format
+ */
 /**
  * Normalizes local image path to match JSON key format
  */
@@ -41,7 +44,40 @@ function normalizePath(pathOrKey: string): string {
 }
 
 /**
- * Returns optimized Cloudinary URL for any local image path or public ID
+ * Derives a valid Cloudinary public ID for unmapped image paths
+ */
+function deriveCloudinaryPublicId(key: string): string {
+  let clean = key.trim();
+  try {
+    clean = decodeURIComponent(clean);
+  } catch (e) {
+    // Ignore decode errors
+  }
+  
+  // Strip domain, Vite dev server prefixes, and asset folder prefixes
+  clean = clean.replace(/^https?:\/\/[^\/]+/, "");
+  clean = clean.replace(/^\/@fs/, "");
+  clean = clean.replace(/^\/@assets\//, "");
+  clean = clean.replace(/^\/attached_assets\//, "");
+  clean = clean.replace(/^\/src\/assets\//, "");
+  clean = clean.replace(/^\/assets\//, "");
+  clean = clean.replace(/^\//, "");
+
+  // Replace spaces with underscores
+  clean = clean.replace(/\s+/g, "_");
+
+  // Remove file extension (e.g. .jpg, .png, .jpeg, .webp, .svg)
+  clean = clean.replace(/\.(jpg|jpeg|png|webp|svg|gif)$/i, "");
+
+  // Prepend diaza_studio folder namespace if not already present
+  if (clean.startsWith("diaza_studio/")) {
+    return clean;
+  }
+  return `diaza_studio/${clean}`;
+}
+
+/**
+ * Returns optimized Cloudinary URL for any image path or public ID
  */
 export function getCloudinaryUrl(
   pathOrKey: string,
@@ -49,7 +85,7 @@ export function getCloudinaryUrl(
 ): string {
   if (!pathOrKey) return "";
 
-  // If already a full external URL (like S3 or external CDN), return as-is or transform if Cloudinary
+  // If already a full external URL (like S3 or external CDN), transform if Cloudinary or return external URL
   if (pathOrKey.startsWith("http://") || pathOrKey.startsWith("https://")) {
     if (pathOrKey.includes("res.cloudinary.com")) {
       return transformCloudinaryUrl(pathOrKey, options);
@@ -57,26 +93,18 @@ export function getCloudinaryUrl(
     return pathOrKey;
   }
 
+  // Handle blob or data URLs
+  if (pathOrKey.startsWith("blob:") || pathOrKey.startsWith("data:")) {
+    return pathOrKey;
+  }
+
   const key = normalizePath(pathOrKey);
-
-  // Ensure Cloudinary is active (fallback to manifest cloudName if env var is missing during deployment)
-  const isCloudinaryActive = Boolean(
-    (import.meta as any).env?.VITE_CLOUDINARY_CLOUD_NAME ||
-    cloudinaryData.cloudName ||
-    "nw9o0vrv"
-  );
-  if (!isCloudinaryActive) {
-    return pathOrKey;
-  }
-
-  // If path is a Vite bundled asset (e.g. /assets/...), return as-is
-  if (key.includes("/assets/")) {
-    return pathOrKey;
-  }
-
   const imagesDict = cloudinaryData.images as Record<string, any>;
+  
+  // 1. Try exact key match
   let mapped = imagesDict[key];
 
+  // 2. Try decoded URI key match
   if (!mapped) {
     try {
       const decodedKey = decodeURIComponent(key);
@@ -86,15 +114,37 @@ export function getCloudinaryUrl(
     }
   }
 
+  // 3. Try encoded URI key match (e.g. spaces -> %20)
   if (!mapped) {
-    if (!missingImagesSet.has(key)) {
-      missingImagesSet.add(key);
-      console.warn(`[Cloudinary Helper] Missing image mapping for: ${key}. Falling back to local path.`);
+    try {
+      const encodedKey = encodeURI(key);
+      mapped = imagesDict[encodedKey];
+    } catch (e) {
+      // Ignore
     }
-    return pathOrKey;
   }
 
-  const publicId = mapped.publicId;
+  // 4. Try matching by filename
+  if (!mapped) {
+    const filename = key.split("/").pop();
+    if (filename) {
+      const decodedFilename = decodeURIComponent(filename);
+      for (const [dictKey, dictVal] of Object.entries(imagesDict)) {
+        if (
+          dictKey.endsWith("/" + filename) ||
+          dictKey.endsWith("/" + decodedFilename) ||
+          (dictVal as any)?.fileName === filename ||
+          (dictVal as any)?.fileName === decodedFilename
+        ) {
+          mapped = dictVal;
+          break;
+        }
+      }
+    }
+  }
+
+  // 5. Always resolve through Cloudinary (using manifest publicId or derived Cloudinary publicId)
+  const publicId = mapped?.publicId || deriveCloudinaryPublicId(key);
   const transformations = buildTransformations(options);
 
   return `${BASE_URL}/${transformations}/${publicId}`;
@@ -172,7 +222,7 @@ export function getCloudinaryImageProps(
     sizes: srcSet ? sizes : undefined,
     alt,
     loading: isHero ? ("eager" as const) : ("lazy" as const),
-    fetchPriority: isHero ? ("high" as const) : ("auto" as const),
+    fetchpriority: isHero ? ("high" as const) : ("auto" as const),
   };
 }
 

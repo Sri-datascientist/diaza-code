@@ -314,7 +314,7 @@ const PARVATHY_SITE_FILES = [
 ];
 
 const parvathySiteImages: DriveImageData[] = PARVATHY_SITE_FILES.map((fileName, idx) => {
-  const localPath = `/drive_images/Parvathy site/${encodeURIComponent(fileName)}`;
+  const localPath = `/drive_images/Parvathy%20site/${encodeURIComponent(fileName)}`;
   return {
     id: `parvathy-site-${idx + 1}`,
     name: `Parvathy Site Project ${idx + 1}`,

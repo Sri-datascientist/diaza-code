@@ -8,6 +8,7 @@ import os
 import json
 import re
 import sys
+import urllib.parse
 
 try:
     import cloudinary
@@ -18,9 +19,31 @@ except ImportError:
 
 
 def main():
-    cloud_name = os.environ.get("CLOUDINARY_CLOUD_NAME", "diaza-studio")
-    api_key = os.environ.get("CLOUDINARY_API_KEY")
-    api_secret = os.environ.get("CLOUDINARY_API_SECRET")
+    # Try reading frontend/.env if credentials not in env
+    env_path = os.path.join("frontend", ".env")
+    if os.path.exists(env_path):
+        try:
+            with open(env_path, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("CLOUDINARY_URL="):
+                        # format: cloudinary://API_KEY:API_SECRET@CLOUD_NAME
+                        c_url = line.split("=", 1)[1].strip()
+                        if "cloudinary://" in c_url:
+                            auth_part, cname = c_url.replace("cloudinary://", "").split("@")
+                            key, secret = auth_part.split(":")
+                            os.environ.setdefault("CLOUDINARY_CLOUD_NAME", cname)
+                            os.environ.setdefault("CLOUDINARY_API_KEY", key)
+                            os.environ.setdefault("CLOUDINARY_API_SECRET", secret)
+                    elif "=" in line and not line.startswith("#"):
+                        k, v = line.split("=", 1)
+                        os.environ.setdefault(k.strip(), v.strip())
+        except Exception as e:
+            print(f"Warning reading .env: {e}")
+
+    cloud_name = os.environ.get("CLOUDINARY_CLOUD_NAME", "nw9o0vrv")
+    api_key = os.environ.get("CLOUDINARY_API_KEY", "285245471972584")
+    api_secret = os.environ.get("CLOUDINARY_API_SECRET", "RGNNei3suBV7ckM5zwji-3fW-Fc")
 
     base_dir = os.path.join("frontend", "public")
     output_json = os.path.join("frontend", "src", "data", "cloudinary-images.json")
@@ -64,12 +87,16 @@ def main():
                 else:
                     c_url = f"https://res.cloudinary.com/{cloud_name}/image/upload/f_auto,q_auto/{public_id}"
 
-                mapping[local_key] = {
+                item = {
                     "publicId": public_id,
                     "cloudinaryUrl": c_url,
                     "fileName": file,
                     "size": os.path.getsize(full_path)
                 }
+                mapping[local_key] = item
+                encoded_key = urllib.parse.quote(local_key, safe="/")
+                if encoded_key != local_key:
+                    mapping[encoded_key] = item
 
     os.makedirs(os.path.dirname(output_json), exist_ok=True)
     with open(output_json, "w", encoding="utf-8") as f:

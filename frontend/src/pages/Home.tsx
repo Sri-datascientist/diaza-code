@@ -47,7 +47,10 @@ export default function Home() {
                 alt={`Luxury interior design ${index + 1}`}
                 className="w-full h-full object-cover"
                 loading={index === 0 ? "eager" : "lazy"}
-                fetchPriority={index === 0 ? "high" : "low"}
+                {...{ fetchpriority: index === 0 ? "high" : "low" }}
+                onError={(e) => {
+                  e.currentTarget.src = image;
+                }}
               />
               <div className="absolute inset-0 bg-[rgba(61,61,61,0.5)]" />
             </div>

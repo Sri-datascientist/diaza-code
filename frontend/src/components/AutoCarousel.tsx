@@ -81,7 +81,7 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
                     alt={image.name || `Portfolio image ${index + 1}`}
                     className="w-full h-full object-cover"
                     loading={isEager ? "eager" : "lazy"}
-                    fetchPriority={isEager ? "high" : "low"}
+                    {...{ fetchpriority: isEager ? "high" : "low" }}
                     decoding="async"
                     onError={(e) => {
                       const target = e.currentTarget;
@@ -123,7 +123,7 @@ export function AutoCarousel({ speed = 30, className = "", showTwoRows = false, 
                     alt={image.name || `Portfolio image ${index + 1}`}
                     className="w-full h-full object-cover"
                     loading={isEager ? "eager" : "lazy"}
-                    fetchPriority={isEager ? "high" : "low"}
+                    {...{ fetchpriority: isEager ? "high" : "low" }}
                     decoding="async"
                     onError={(e) => {
                       const target = e.currentTarget;
